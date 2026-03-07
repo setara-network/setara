@@ -1,0 +1,13 @@
+syntax = "proto3";
+package setara.organization.v1;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "setara/x/organization/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "setara/x/organization/Params";
+  option (gogoproto.equal) = true;
+}

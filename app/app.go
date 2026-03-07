@@ -47,6 +47,7 @@ import (
 
 	"setara/docs"
 	documentmodulekeeper "setara/x/document/keeper"
+	organizationmodulekeeper "setara/x/organization/keeper"
 )
 
 const (
@@ -99,8 +100,9 @@ type App struct {
 	TransferKeeper      ibctransferkeeper.Keeper
 
 	// simulation manager
-	sm             *module.SimulationManager
-	DocumentKeeper documentmodulekeeper.Keeper
+	sm                 *module.SimulationManager
+	DocumentKeeper     documentmodulekeeper.Keeper
+	OrganizationKeeper organizationmodulekeeper.Keeper
 }
 
 func init() {
@@ -181,6 +183,7 @@ func New(
 		&app.CircuitBreakerKeeper,
 		&app.ParamsKeeper,
 		&app.DocumentKeeper,
+		&app.OrganizationKeeper,
 	); err != nil {
 		panic(err)
 	}

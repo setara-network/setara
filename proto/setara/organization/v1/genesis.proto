@@ -1,0 +1,17 @@
+syntax = "proto3";
+package setara.organization.v1;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "setara/organization/v1/params.proto";
+
+option go_package = "setara/x/organization/types";
+
+// GenesisState defines the organization module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

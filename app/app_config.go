@@ -3,6 +3,8 @@ package app
 import (
 	_ "setara/x/document/module"
 	documentmoduletypes "setara/x/document/types"
+	_ "setara/x/organization/module"
+	organizationmoduletypes "setara/x/organization/types"
 	"time"
 
 	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
@@ -124,14 +126,14 @@ var (
 						// ibc modules
 						ibcexported.ModuleName,
 						// chain modules
-						documentmoduletypes.ModuleName},
+						documentmoduletypes.ModuleName, organizationmoduletypes.ModuleName},
 					EndBlockers: []string{
 						govtypes.ModuleName,
 						stakingtypes.ModuleName,
 						feegrant.ModuleName,
 						group.ModuleName,
 						// chain modules
-						documentmoduletypes.ModuleName},
+						documentmoduletypes.ModuleName, organizationmoduletypes.ModuleName},
 					// The following is mostly only needed when ModuleName != StoreKey name.
 					OverrideStoreKeys: []*runtimev1alpha1.StoreKeyConfig{
 						{
@@ -166,7 +168,7 @@ var (
 						ibctransfertypes.ModuleName,
 						icatypes.ModuleName,
 						// chain modules
-						documentmoduletypes.ModuleName},
+						documentmoduletypes.ModuleName, organizationmoduletypes.ModuleName},
 				}),
 			},
 			{
@@ -264,6 +266,9 @@ var (
 			{
 				Name:   documentmoduletypes.ModuleName,
 				Config: appconfig.WrapAny(&documentmoduletypes.Module{}),
+			}, {
+				Name:   organizationmoduletypes.ModuleName,
+				Config: appconfig.WrapAny(&organizationmoduletypes.Module{}),
 			}},
 	})
 )
