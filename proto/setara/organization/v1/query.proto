@@ -1,10 +1,12 @@
 syntax = "proto3";
+
 package setara.organization.v1;
 
 import "amino/amino.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
+import "setara/organization/v1/organization.proto";
 import "setara/organization/v1/params.proto";
 
 option go_package = "setara/x/organization/types";
@@ -14,6 +16,16 @@ service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
     option (google.api.http).get = "/setara/organization/v1/params";
+  }
+
+  // ListOrganization Queries a list of Organization items.
+  rpc GetOrganization(QueryGetOrganizationRequest) returns (QueryGetOrganizationResponse) {
+    option (google.api.http).get = "/setara/organization/v1/organization/{index}";
+  }
+
+  // ListOrganization defines the ListOrganization RPC.
+  rpc ListOrganization(QueryAllOrganizationRequest) returns (QueryAllOrganizationResponse) {
+    option (google.api.http).get = "/setara/organization/v1/organization";
   }
 }
 
@@ -27,4 +39,25 @@ message QueryParamsResponse {
     (gogoproto.nullable) = false,
     (amino.dont_omitempty) = true
   ];
+}
+
+// QueryGetOrganizationRequest defines the QueryGetOrganizationRequest message.
+message QueryGetOrganizationRequest {
+  string index = 1;
+}
+
+// QueryGetOrganizationResponse defines the QueryGetOrganizationResponse message.
+message QueryGetOrganizationResponse {
+  Organization organization = 1 [(gogoproto.nullable) = false];
+}
+
+// QueryAllOrganizationRequest defines the QueryAllOrganizationRequest message.
+message QueryAllOrganizationRequest {
+  cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+// QueryAllOrganizationResponse defines the QueryAllOrganizationResponse message.
+message QueryAllOrganizationResponse {
+  repeated Organization organization = 1 [(gogoproto.nullable) = false];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2;
 }

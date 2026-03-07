@@ -17,6 +17,18 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					Use:       "params",
 					Short:     "Shows the parameters of the module",
 				},
+				{
+					RpcMethod: "ListOrganization",
+					Use:       "list-organization",
+					Short:     "List all organization",
+				},
+				{
+					RpcMethod:      "GetOrganization",
+					Use:            "get-organization [id]",
+					Short:          "Gets a organization",
+					Alias:          []string{"show-organization"},
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "index"}},
+				},
 			},
 		},
 		Tx: &autocliv1.ServiceCommandDescriptor{

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package setara.organization.v1;
+
+option go_package = "setara/x/organization/types";
+
+// Organization defines the Organization message.
+message Organization {
+  string index = 1;
+  string name = 2;
+  string description = 3;
+  string ipfs_endpoint = 4;
+  string admin = 5;
+  bool is_active = 6;
+}

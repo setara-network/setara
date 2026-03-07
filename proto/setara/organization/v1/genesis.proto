@@ -1,8 +1,10 @@
 syntax = "proto3";
+
 package setara.organization.v1;
 
 import "amino/amino.proto";
 import "gogoproto/gogo.proto";
+import "setara/organization/v1/organization.proto";
 import "setara/organization/v1/params.proto";
 
 option go_package = "setara/x/organization/types";
@@ -14,4 +16,5 @@ message GenesisState {
     (gogoproto.nullable) = false,
     (amino.dont_omitempty) = true
   ];
+  repeated Organization organization_map = 2 [(gogoproto.nullable) = false];
 }
