@@ -3,18 +3,19 @@ package config
 import "os"
 
 type Config struct {
-	Port             string
-	ChainRPC         string
-	ChainGRPC        string
-	ChainID          string
-	KeyringBackend   string
-	AdminKeyName     string
-	HomePath         string
-	RazorpayKeyID    string
-	RazorpaySecret   string
-	DefaultDocFee    float64
-	DefaultNodeFee   float64
-	DatabasePath     string
+	Port           string
+	ChainRPC       string
+	ChainGRPC      string
+	ChainID        string
+	KeyringBackend string
+	AdminKeyName   string
+	HomePath       string
+	RazorpayKeyID  string
+	RazorpaySecret string
+	DefaultDocFee  float64
+	DefaultNodeFee float64
+	DatabasePath   string
+	AdminSecret    string // super admin secret for admin API
 }
 
 func Load() *Config {
@@ -28,9 +29,10 @@ func Load() *Config {
 		HomePath:       getEnv("SETARA_HOME", ""),
 		RazorpayKeyID:  getEnv("RAZORPAY_KEY_ID", ""),
 		RazorpaySecret: getEnv("RAZORPAY_SECRET", ""),
-		DefaultDocFee:  5.0,  // INR per document
-		DefaultNodeFee: 5000, // INR per month
+		DefaultDocFee:  5.0,
+		DefaultNodeFee: 5000,
 		DatabasePath:   getEnv("DB_PATH", "setara-api.db"),
+		AdminSecret:    getEnv("ADMIN_SECRET", ""),
 	}
 }
 

@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"setara/api/middleware"
 	"setara/api/models"
 	"setara/api/store"
 )
@@ -16,68 +17,115 @@ func NewWalletHandler(db *store.Store) *WalletHandler {
 	return &WalletHandler{db: db}
 }
 
-func (h *WalletHandler) GetBalance(w http.ResponseWriter, r *http.Request) {
-	orgID := r.PathValue("org_id")
+// --- Org endpoints (API key auth) ---
+
+// GetMyBalance returns the authenticated org's wallet balance
+func (h *WalletHandler) GetMyBalance(w http.ResponseWriter, r *http.Request) {
+	orgID := r.Context().Value(middleware.OrgIDKey).(string)
 	wallet, err := h.db.GetWallet(orgID)
 	if err != nil {
-		http.Error(w, "wallet not found", http.StatusNotFound)
+		http.Error(w, `{"error":"wallet not found"}`, http.StatusNotFound)
 		return
 	}
 	json.NewEncoder(w).Encode(wallet)
 }
 
-func (h *WalletHandler) GetTransactions(w http.ResponseWriter, r *http.Request) {
-	orgID := r.PathValue("org_id")
+// GetMyTransactions returns the authenticated org's transaction history
+func (h *WalletHandler) GetMyTransactions(w http.ResponseWriter, r *http.Request) {
+	orgID := r.Context().Value(middleware.OrgIDKey).(string)
 	txns, err := h.db.GetTransactions(orgID)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		http.Error(w, `{"error":"failed to fetch transactions"}`, http.StatusInternalServerError)
 		return
+	}
+	if txns == nil {
+		txns = []models.WalletTransaction{}
 	}
 	json.NewEncoder(w).Encode(txns)
 }
 
-func (h *WalletHandler) CreateTopupOrder(w http.ResponseWriter, r *http.Request) {
+// --- Super Admin endpoints ---
+
+// AdminGetBalance returns any org's wallet (super admin only)
+func (h *WalletHandler) AdminGetBalance(w http.ResponseWriter, r *http.Request) {
 	orgID := r.PathValue("org_id")
-	var req models.TopupRequest
-	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-		http.Error(w, "invalid request body", http.StatusBadRequest)
+	wallet, err := h.db.GetWallet(orgID)
+	if err != nil {
+		http.Error(w, `{"error":"wallet not found"}`, http.StatusNotFound)
 		return
 	}
-
-	if req.Amount <= 0 {
-		http.Error(w, "amount must be positive", http.StatusBadRequest)
-		return
-	}
-
-	// TODO: Create Razorpay order and return order_id
-	// For now, return a mock response
-	resp := map[string]interface{}{
-		"org_id":   orgID,
-		"amount":   req.Amount,
-		"currency": "INR",
-		"status":   "order_created",
-		"message":  "Razorpay integration pending - use webhook to confirm payment",
-	}
-	json.NewEncoder(w).Encode(resp)
+	json.NewEncoder(w).Encode(wallet)
 }
 
-func (h *WalletHandler) RazorpayWebhook(w http.ResponseWriter, r *http.Request) {
-	var webhook models.RazorpayWebhook
-	if err := json.NewDecoder(r.Body).Decode(&webhook); err != nil {
-		http.Error(w, "invalid webhook payload", http.StatusBadRequest)
+// AdminCreditWallet adds credits to an org's wallet (super admin only)
+func (h *WalletHandler) AdminCreditWallet(w http.ResponseWriter, r *http.Request) {
+	orgID := r.PathValue("org_id")
+	var req models.CreditRequest
+	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+		http.Error(w, `{"error":"invalid request body"}`, http.StatusBadRequest)
 		return
 	}
 
-	// TODO: Verify Razorpay signature
-	// TODO: Extract payment details and credit wallet
-
-	if webhook.Event == "payment.captured" {
-		// Credit the wallet
-		w.WriteHeader(http.StatusOK)
-		json.NewEncoder(w).Encode(map[string]string{"status": "processed"})
+	if req.Credits == 0 {
+		http.Error(w, `{"error":"credits must be non-zero"}`, http.StatusBadRequest)
 		return
 	}
 
-	w.WriteHeader(http.StatusOK)
-	json.NewEncoder(w).Encode(map[string]string{"status": "ignored"})
+	txType := "credit"
+	if req.Credits < 0 {
+		txType = "adjustment"
+	}
+
+	if req.Credits < 0 {
+		// Deducting credits
+		if err := h.db.DeductCredits(orgID, -req.Credits, txType, req.Reference); err != nil {
+			http.Error(w, `{"error":"`+err.Error()+`"}`, http.StatusBadRequest)
+			return
+		}
+	} else {
+		if err := h.db.CreditWallet(orgID, req.Credits, txType, req.Reference); err != nil {
+			http.Error(w, `{"error":"failed to credit wallet"}`, http.StatusInternalServerError)
+			return
+		}
+	}
+
+	wallet, _ := h.db.GetWallet(orgID)
+	json.NewEncoder(w).Encode(map[string]interface{}{
+		"status":      "done",
+		"org_id":      orgID,
+		"credited":    req.Credits,
+		"new_balance": wallet.Credits,
+	})
+}
+
+// AdminGetTransactions returns any org's transactions (super admin only)
+func (h *WalletHandler) AdminGetTransactions(w http.ResponseWriter, r *http.Request) {
+	orgID := r.PathValue("org_id")
+	txns, err := h.db.GetTransactions(orgID)
+	if err != nil {
+		http.Error(w, `{"error":"failed to fetch transactions"}`, http.StatusInternalServerError)
+		return
+	}
+	if txns == nil {
+		txns = []models.WalletTransaction{}
+	}
+	json.NewEncoder(w).Encode(txns)
+}
+
+// AdminUpdateBilling updates billing config for an org (super admin only)
+func (h *WalletHandler) AdminUpdateBilling(w http.ResponseWriter, r *http.Request) {
+	orgID := r.PathValue("org_id")
+	var req models.UpdateBillingRequest
+	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+		http.Error(w, `{"error":"invalid request body"}`, http.StatusBadRequest)
+		return
+	}
+
+	if err := h.db.UpdateBillingConfig(orgID, &req); err != nil {
+		http.Error(w, `{"error":"failed to update billing"}`, http.StatusInternalServerError)
+		return
+	}
+
+	bc, _ := h.db.GetBillingConfig(orgID)
+	json.NewEncoder(w).Encode(bc)
 }

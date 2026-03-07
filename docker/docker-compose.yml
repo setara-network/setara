@@ -42,6 +42,7 @@ services:
       - DB_PATH=/data/setara-api.db
       - RAZORPAY_KEY_ID=${RAZORPAY_KEY_ID:-}
       - RAZORPAY_SECRET=${RAZORPAY_SECRET:-}
+      - ADMIN_SECRET=${ADMIN_SECRET:-}
     depends_on:
       - setara-node
     restart: unless-stopped

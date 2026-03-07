@@ -2,6 +2,7 @@ package middleware
 
 import (
 	"context"
+	"crypto/subtle"
 	"net/http"
 	"strings"
 
@@ -12,6 +13,7 @@ type contextKey string
 
 const OrgIDKey contextKey = "org_id"
 
+// APIKeyAuth authenticates orgs via X-API-Key header
 func APIKeyAuth(db *store.Store) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -24,23 +26,48 @@ func APIKeyAuth(db *store.Store) func(http.Handler) http.Handler {
 			}
 
 			if apiKey == "" {
-				http.Error(w, "missing API key", http.StatusUnauthorized)
+				http.Error(w, `{"error":"missing API key"}`, http.StatusUnauthorized)
 				return
 			}
 
 			org, err := db.GetOrgByAPIKey(apiKey)
 			if err != nil {
-				http.Error(w, "invalid API key", http.StatusUnauthorized)
+				http.Error(w, `{"error":"invalid API key"}`, http.StatusUnauthorized)
 				return
 			}
 
 			if !org.IsActive {
-				http.Error(w, "organization is inactive", http.StatusForbidden)
+				http.Error(w, `{"error":"organization is inactive"}`, http.StatusForbidden)
 				return
 			}
 
 			ctx := context.WithValue(r.Context(), OrgIDKey, org.ID)
 			next.ServeHTTP(w, r.WithContext(ctx))
+		})
+	}
+}
+
+// SuperAdminAuth authenticates super admin via X-Admin-Secret header
+func SuperAdminAuth(adminSecret string) func(http.Handler) http.Handler {
+	return func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			if adminSecret == "" {
+				http.Error(w, `{"error":"admin API not configured"}`, http.StatusServiceUnavailable)
+				return
+			}
+
+			secret := r.Header.Get("X-Admin-Secret")
+			if secret == "" {
+				http.Error(w, `{"error":"missing admin secret"}`, http.StatusUnauthorized)
+				return
+			}
+
+			if subtle.ConstantTimeCompare([]byte(secret), []byte(adminSecret)) != 1 {
+				http.Error(w, `{"error":"invalid admin secret"}`, http.StatusUnauthorized)
+				return
+			}
+
+			next.ServeHTTP(w, r)
 		})
 	}
 }
