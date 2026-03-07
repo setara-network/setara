@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  explorer:
+    image: ghcr.io/ping-pub/explorer:latest
+    container_name: setara-explorer
+    ports:
+      - "8090:80"
+    volumes:
+      - ./chain.json:/usr/share/nginx/html/chains/mainnet/setara.json
+    restart: unless-stopped
