@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  setara-node:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: setara-node
+    ports:
+      - "26656:26656" # P2P
+      - "26657:26657" # RPC
+      - "1317:1317"   # REST API
+      - "9090:9090"   # gRPC
+    volumes:
+      - setara-data:/root/.setara
+      - ./scripts:/scripts
+      - ./genesis:/genesis
+    environment:
+      - MONIKER=${MONIKER:-setara-node}
+      - CHAIN_ID=${CHAIN_ID:-setara-testnet-1}
+      - SEEDS=${SEEDS:-}
+      - PERSISTENT_PEERS=${PERSISTENT_PEERS:-}
+    entrypoint: ["/bin/bash", "/scripts/start.sh"]
+    restart: unless-stopped
+    networks:
+      - setara
+
+  ipfs:
+    image: ipfs/kubo:latest
+    container_name: setara-ipfs
+    ports:
+      - "4001:4001"   # Swarm
+      - "5001:5001"   # API
+      - "8080:8080"   # Gateway
+    volumes:
+      - ipfs-data:/data/ipfs
+    environment:
+      - IPFS_PROFILE=server
+    restart: unless-stopped
+    networks:
+      - setara
+
+volumes:
+  setara-data:
+  ipfs-data:
+
+networks:
+  setara:
+    driver: bridge
