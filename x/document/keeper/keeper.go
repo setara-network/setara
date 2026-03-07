@@ -23,6 +23,7 @@ type Keeper struct {
 	Params collections.Item[types.Params]
 
 	bankKeeper types.BankKeeper
+	orgKeeper  types.OrganizationKeeper
 	Document   collections.Map[string, types.Document]
 	HashIndex  collections.Map[string, string] // hash -> document index
 }
@@ -34,6 +35,7 @@ func NewKeeper(
 	authority []byte,
 
 	bankKeeper types.BankKeeper,
+	orgKeeper types.OrganizationKeeper,
 ) Keeper {
 	if _, err := addressCodec.BytesToString(authority); err != nil {
 		panic(fmt.Sprintf("invalid authority address %s: %s", authority, err))
@@ -48,6 +50,7 @@ func NewKeeper(
 		authority:    authority,
 
 		bankKeeper: bankKeeper,
+		orgKeeper:  orgKeeper,
 		Params:     collections.NewItem(sb, types.ParamsKey, "params", codec.CollValue[types.Params](cdc)),
 		Document:   collections.NewMap(sb, types.DocumentKey, "document", collections.StringKey, codec.CollValue[types.Document](cdc)),
 		HashIndex:  collections.NewMap(sb, types.HashIndexKey, "hash_index", collections.StringKey, collections.StringValue),

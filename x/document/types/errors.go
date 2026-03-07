@@ -11,4 +11,5 @@ var (
 	ErrInvalidHash      = errors.Register(ModuleName, 1103, "invalid document hash")
 	ErrInvalidIpfsCid   = errors.Register(ModuleName, 1104, "invalid IPFS CID")
 	ErrInvalidOrgId     = errors.Register(ModuleName, 1105, "invalid organization ID")
+	ErrUnauthorized     = errors.Register(ModuleName, 1106, "unauthorized")
 )

@@ -26,6 +26,21 @@ func (k msgServer) RegisterDocument(ctx context.Context, msg *types.MsgRegisterD
 		return nil, errorsmod.Wrap(types.ErrInvalidOrgId, "organization ID cannot be empty")
 	}
 
+	// Verify the sender is the admin of the specified organization
+	admin, isActive, found, err := k.orgKeeper.GetOrganization(ctx, msg.OrgId)
+	if err != nil {
+		return nil, err
+	}
+	if !found {
+		return nil, errorsmod.Wrap(types.ErrInvalidOrgId, "organization not found")
+	}
+	if !isActive {
+		return nil, errorsmod.Wrap(types.ErrUnauthorized, "organization is not active")
+	}
+	if admin != msg.Creator {
+		return nil, errorsmod.Wrap(types.ErrUnauthorized, "only the organization admin can register documents")
+	}
+
 	// Check if document with this hash already exists
 	existingIdx, err := k.HashIndex.Get(ctx, msg.Hash)
 	if err == nil && existingIdx != "" {
