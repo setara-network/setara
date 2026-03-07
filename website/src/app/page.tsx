@@ -201,7 +201,7 @@ export default function Home() {
                 Deploy your own Setara node with Docker. One command, fully configured,
                 production-ready.
               </p>
-              <a href="#" className="text-sm font-semibold text-[#E8613C] hover:underline">
+              <a href="/docs/run-node" className="text-sm font-semibold text-[#E8613C] hover:underline">
                 Node Setup Guide &rarr;
               </a>
             </div>
@@ -217,7 +217,7 @@ export default function Home() {
                 Integrate document verification into your application with our REST API
                 and SDK.
               </p>
-              <a href="#" className="text-sm font-semibold text-[#E8613C] hover:underline">
+              <a href="/docs/build-app" className="text-sm font-semibold text-[#E8613C] hover:underline">
                 Developer Docs &rarr;
               </a>
             </div>
@@ -234,7 +234,7 @@ export default function Home() {
                 Complete API documentation for document registration, verification,
                 and organization management.
               </p>
-              <a href="#" className="text-sm font-semibold text-[#E8613C] hover:underline">
+              <a href="/docs/api" className="text-sm font-semibold text-[#E8613C] hover:underline">
                 View API Docs &rarr;
               </a>
             </div>
@@ -316,7 +316,7 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="#"
+              href="/register"
               className="w-full rounded-full bg-[#E8613C] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#E8613C]/25 transition-all hover:bg-[#d4542f] sm:w-auto"
             >
               Register Your Organization

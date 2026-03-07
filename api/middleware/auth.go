@@ -17,6 +17,10 @@ const OrgIDKey contextKey = "org_id"
 func APIKeyAuth(db *store.Store) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			if r.Method == "OPTIONS" {
+				next.ServeHTTP(w, r)
+				return
+			}
 			apiKey := r.Header.Get("X-API-Key")
 			if apiKey == "" {
 				auth := r.Header.Get("Authorization")
@@ -51,6 +55,10 @@ func APIKeyAuth(db *store.Store) func(http.Handler) http.Handler {
 func SuperAdminAuth(adminSecret string) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			if r.Method == "OPTIONS" {
+				next.ServeHTTP(w, r)
+				return
+			}
 			if adminSecret == "" {
 				http.Error(w, `{"error":"admin API not configured"}`, http.StatusServiceUnavailable)
 				return
@@ -75,6 +83,19 @@ func SuperAdminAuth(adminSecret string) func(http.Handler) http.Handler {
 func JSON(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
+		next.ServeHTTP(w, r)
+	})
+}
+
+func CORS(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PATCH, DELETE, OPTIONS")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, X-API-Key, X-Admin-Secret, Authorization")
+		if r.Method == "OPTIONS" {
+			w.WriteHeader(http.StatusNoContent)
+			return
+		}
 		next.ServeHTTP(w, r)
 	})
 }

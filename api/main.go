@@ -64,7 +64,7 @@ func main() {
 
 	mux.Handle("/api/v1/admin/", middleware.SuperAdminAuth(cfg.AdminSecret)(adminMux))
 
-	handler := middleware.JSON(mux)
+	handler := middleware.CORS(middleware.JSON(mux))
 
 	addr := fmt.Sprintf(":%s", cfg.Port)
 	log.Printf("Setara API starting on %s", addr)

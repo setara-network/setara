@@ -57,6 +57,10 @@ func (h *OrgHandler) ListOrgs(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, `{"error":"failed to list orgs"}`, http.StatusInternalServerError)
 		return
 	}
+	if orgs == nil {
+		json.NewEncoder(w).Encode([]struct{}{})
+		return
+	}
 	json.NewEncoder(w).Encode(orgs)
 }
 

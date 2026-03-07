@@ -10,9 +10,9 @@ const footerLinks = {
     { label: "Ecosystem", href: "#ecosystem" },
   ],
   Developers: [
-    { label: "Documentation", href: "#developers" },
-    { label: "API Reference", href: "#developers" },
-    { label: "Run a Node", href: "#developers" },
+    { label: "Documentation", href: "/docs/build-app" },
+    { label: "API Reference", href: "/docs/api" },
+    { label: "Run a Node", href: "/docs/run-node" },
     { label: "GitHub", href: "https://github.com/setara-network" },
   ],
   Community: [
@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Image
-              src="/setara_light.png"
+              src="/setara_dark.png"
               alt="Setara Network"
               width={130}
               height={36}

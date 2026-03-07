@@ -23,15 +23,15 @@
   "coin_type": "118",
   "min_tx_fee": "0",
   "addr_prefix": "setara",
-  "logo": "/logos/setara.svg",
-  "theme_color": "#1a56db",
+  "logo": "/logos/setara.png",
+  "theme_color": "#E8613C",
   "assets": [
     {
       "base": "setara",
       "symbol": "SETARA",
       "exponent": "0",
       "coingecko_id": "",
-      "logo": "/logos/setara.svg"
+      "logo": "/logos/setara.png"
     }
   ]
 }

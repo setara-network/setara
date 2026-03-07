@@ -45,7 +45,7 @@ export default function Hero() {
               Start Building
             </a>
             <a
-              href="#"
+              href="/whitepaper"
               className="w-full rounded-full border border-white/20 px-8 py-3.5 text-base font-semibold text-white transition-all hover:border-white/40 hover:bg-white/5 sm:w-auto"
             >
               Read Whitepaper
