@@ -39,6 +39,12 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					RpcMethod: "UpdateParams",
 					Skip:      true, // skipped because authority gated
 				},
+				{
+					RpcMethod:      "RegisterOrganization",
+					Use:            "register-organization [name] [description] [ipfs-endpoint]",
+					Short:          "Send a register-organization tx",
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "name"}, {ProtoField: "description"}, {ProtoField: "ipfs_endpoint"}},
+				},
 			},
 		},
 	}
