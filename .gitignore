@@ -7,3 +7,6 @@ release/
 *.dot
 *.log
 *.ign
+website/node_modules/
+website/.next/
+*.db
