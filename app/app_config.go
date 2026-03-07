@@ -1,6 +1,8 @@
 package app
 
 import (
+	_ "setara/x/document/module"
+	documentmoduletypes "setara/x/document/types"
 	"time"
 
 	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
@@ -81,7 +83,7 @@ var (
 		{Account: nft.ModuleName},
 		{Account: ibctransfertypes.ModuleName, Permissions: []string{authtypes.Minter, authtypes.Burner}},
 		{Account: icatypes.ModuleName},
-	}
+		{Account: documentmoduletypes.ModuleName, Permissions: []string{authtypes.Minter, authtypes.Burner, authtypes.Staking}}}
 
 	// blocked account addresses
 	blockAccAddrs = []string{
@@ -122,14 +124,14 @@ var (
 						// ibc modules
 						ibcexported.ModuleName,
 						// chain modules
-					},
+						documentmoduletypes.ModuleName},
 					EndBlockers: []string{
 						govtypes.ModuleName,
 						stakingtypes.ModuleName,
 						feegrant.ModuleName,
 						group.ModuleName,
 						// chain modules
-					},
+						documentmoduletypes.ModuleName},
 					// The following is mostly only needed when ModuleName != StoreKey name.
 					OverrideStoreKeys: []*runtimev1alpha1.StoreKeyConfig{
 						{
@@ -164,7 +166,7 @@ var (
 						ibctransfertypes.ModuleName,
 						icatypes.ModuleName,
 						// chain modules
-					},
+						documentmoduletypes.ModuleName},
 				}),
 			},
 			{
@@ -259,6 +261,9 @@ var (
 				Name:   epochstypes.ModuleName,
 				Config: appconfig.WrapAny(&epochsmodulev1.Module{}),
 			},
-		},
+			{
+				Name:   documentmoduletypes.ModuleName,
+				Config: appconfig.WrapAny(&documentmoduletypes.Module{}),
+			}},
 	})
 )
