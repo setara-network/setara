@@ -1,27 +1,41 @@
 version: 1
 validation: sovereign
-default_denom: stake
-accounts: 
+default_denom: setara
+accounts:
 - name: alice
   coins:
-  - 20000token
-  - 200000000stake
+  - 200000000setara
 - name: bob
   coins:
-  - 10000token
-  - 100000000stake
+  - 100000000setara
 client:
   openapi:
     path: docs/static/openapi.json
 faucet:
   name: bob
   coins:
-  - 5token
-  - 100000stake
+  - 100000setara
 validators:
 - name: alice
-  bonded: 100000000stake
-- name: validator1
-  bonded: 200000000stake
-- name: validator2
-  bonded: 100000000stake
+  bonded: 100000000setara
+genesis:
+  app_state:
+    crisis:
+      constant_fee:
+        denom: setara
+    gov:
+      params:
+        min_deposit:
+        - denom: setara
+          amount: "10000000"
+    mint:
+      minter:
+        inflation: "0.000000000000000000"
+      params:
+        inflation_rate_change: "0.000000000000000000"
+        inflation_max: "0.000000000000000000"
+        inflation_min: "0.000000000000000000"
+        mint_denom: setara
+    staking:
+      params:
+        bond_denom: setara

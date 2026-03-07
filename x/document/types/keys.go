@@ -17,3 +17,6 @@ const (
 
 // ParamsKey is the prefix to retrieve all Params
 var ParamsKey = collections.NewPrefix("p_document")
+
+// HashIndexKey is the prefix for the hash-to-document-index mapping
+var HashIndexKey = collections.NewPrefix("document/hash_index/")

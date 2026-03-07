@@ -6,6 +6,7 @@ import (
 	"setara/x/document/types"
 
 	errorsmod "cosmossdk.io/errors"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 func (k msgServer) VerifyDocument(ctx context.Context, msg *types.MsgVerifyDocument) (*types.MsgVerifyDocumentResponse, error) {
@@ -13,7 +14,26 @@ func (k msgServer) VerifyDocument(ctx context.Context, msg *types.MsgVerifyDocum
 		return nil, errorsmod.Wrap(err, "invalid authority address")
 	}
 
-	// TODO: Handle the message
+	if msg.DocumentId == "" {
+		return nil, errorsmod.Wrap(types.ErrDocNotFound, "document ID cannot be empty")
+	}
+
+	has, err := k.Document.Has(ctx, msg.DocumentId)
+	if err != nil {
+		return nil, err
+	}
+	if !has {
+		return nil, errorsmod.Wrap(types.ErrDocNotFound, msg.DocumentId)
+	}
+
+	sdkCtx := sdk.UnwrapSDKContext(ctx)
+	sdkCtx.EventManager().EmitEvent(
+		sdk.NewEvent(
+			"verify_document",
+			sdk.NewAttribute("document_id", msg.DocumentId),
+			sdk.NewAttribute("verifier", msg.Creator),
+		),
+	)
 
 	return &types.MsgVerifyDocumentResponse{}, nil
 }

@@ -24,6 +24,7 @@ type Keeper struct {
 
 	bankKeeper types.BankKeeper
 	Document   collections.Map[string, types.Document]
+	HashIndex  collections.Map[string, string] // hash -> document index
 }
 
 func NewKeeper(
@@ -48,7 +49,9 @@ func NewKeeper(
 
 		bankKeeper: bankKeeper,
 		Params:     collections.NewItem(sb, types.ParamsKey, "params", codec.CollValue[types.Params](cdc)),
-		Document:   collections.NewMap(sb, types.DocumentKey, "document", collections.StringKey, codec.CollValue[types.Document](cdc))}
+		Document:   collections.NewMap(sb, types.DocumentKey, "document", collections.StringKey, codec.CollValue[types.Document](cdc)),
+		HashIndex:  collections.NewMap(sb, types.HashIndexKey, "hash_index", collections.StringKey, collections.StringValue),
+	}
 
 	schema, err := sb.Build()
 	if err != nil {
