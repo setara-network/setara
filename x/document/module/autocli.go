@@ -39,6 +39,12 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					RpcMethod: "UpdateParams",
 					Skip:      true, // skipped because authority gated
 				},
+				{
+					RpcMethod:      "RegisterDocument",
+					Use:            "register-document [hash] [ipfs-cid] [org-id] [doc-type] [metadata] [recipient]",
+					Short:          "Send a register-document tx",
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "hash"}, {ProtoField: "ipfs_cid"}, {ProtoField: "org_id"}, {ProtoField: "doc_type"}, {ProtoField: "metadata"}, {ProtoField: "recipient"}},
+				},
 			},
 		},
 	}

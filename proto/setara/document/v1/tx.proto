@@ -1,4 +1,5 @@
 syntax = "proto3";
+
 package setara.document.v1;
 
 import "amino/amino.proto";
@@ -16,6 +17,9 @@ service Msg {
   // UpdateParams defines a (governance) operation for updating the module
   // parameters. The authority defaults to the x/gov module account.
   rpc UpdateParams(MsgUpdateParams) returns (MsgUpdateParamsResponse);
+
+  // RegisterDocument defines the RegisterDocument RPC.
+  rpc RegisterDocument(MsgRegisterDocument) returns (MsgRegisterDocumentResponse);
 }
 
 // MsgUpdateParams is the Msg/UpdateParams request type.
@@ -27,7 +31,7 @@ message MsgUpdateParams {
   string authority = 1 [(cosmos_proto.scalar) = "cosmos.AddressString"];
 
   // params defines the module parameters to update.
-  //
+
   // NOTE: All parameters must be supplied.
   Params params = 2 [
     (gogoproto.nullable) = false,
@@ -38,3 +42,18 @@ message MsgUpdateParams {
 // MsgUpdateParamsResponse defines the response structure for executing a
 // MsgUpdateParams message.
 message MsgUpdateParamsResponse {}
+
+// MsgRegisterDocument defines the MsgRegisterDocument message.
+message MsgRegisterDocument {
+  option (cosmos.msg.v1.signer) = "creator";
+  string creator = 1 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+  string hash = 2;
+  string ipfs_cid = 3;
+  string org_id = 4;
+  string doc_type = 5;
+  string metadata = 6;
+  string recipient = 7;
+}
+
+// MsgRegisterDocumentResponse defines the MsgRegisterDocumentResponse message.
+message MsgRegisterDocumentResponse {}
