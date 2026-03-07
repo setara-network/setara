@@ -29,6 +29,12 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					Alias:          []string{"show-document"},
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "index"}},
 				},
+				{
+					RpcMethod:      "DocumentByHash",
+					Use:            "document-by-hash [hash]",
+					Short:          "Query document-by-hash",
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "hash"}},
+				},
 			},
 		},
 		Tx: &autocliv1.ServiceCommandDescriptor{

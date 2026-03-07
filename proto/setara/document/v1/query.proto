@@ -27,6 +27,11 @@ service Query {
   rpc ListDocument(QueryAllDocumentRequest) returns (QueryAllDocumentResponse) {
     option (google.api.http).get = "/setara/document/v1/document";
   }
+
+  // DocumentByHash Queries a list of DocumentByHash items.
+  rpc DocumentByHash(QueryDocumentByHashRequest) returns (QueryDocumentByHashResponse) {
+    option (google.api.http).get = "/setara/document/v1/document_by_hash/{hash}";
+  }
 }
 
 // QueryParamsRequest is request type for the Query/Params RPC method.
@@ -60,4 +65,14 @@ message QueryAllDocumentRequest {
 message QueryAllDocumentResponse {
   repeated Document document = 1 [(gogoproto.nullable) = false];
   cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
+
+// QueryDocumentByHashRequest defines the QueryDocumentByHashRequest message.
+message QueryDocumentByHashRequest {
+  string hash = 1;
+}
+
+// QueryDocumentByHashResponse defines the QueryDocumentByHashResponse message.
+message QueryDocumentByHashResponse {
+  Document document = 1;
 }
