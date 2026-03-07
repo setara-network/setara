@@ -17,6 +17,18 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					Use:       "params",
 					Short:     "Shows the parameters of the module",
 				},
+				{
+					RpcMethod: "ListDocument",
+					Use:       "list-document",
+					Short:     "List all document",
+				},
+				{
+					RpcMethod:      "GetDocument",
+					Use:            "get-document [id]",
+					Short:          "Gets a document",
+					Alias:          []string{"show-document"},
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "index"}},
+				},
 			},
 		},
 		Tx: &autocliv1.ServiceCommandDescriptor{

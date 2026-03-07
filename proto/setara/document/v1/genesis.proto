@@ -1,8 +1,10 @@
 syntax = "proto3";
+
 package setara.document.v1;
 
 import "amino/amino.proto";
 import "gogoproto/gogo.proto";
+import "setara/document/v1/document.proto";
 import "setara/document/v1/params.proto";
 
 option go_package = "setara/x/document/types";
@@ -14,4 +16,5 @@ message GenesisState {
     (gogoproto.nullable) = false,
     (amino.dont_omitempty) = true
   ];
+  repeated Document document_map = 2 [(gogoproto.nullable) = false];
 }

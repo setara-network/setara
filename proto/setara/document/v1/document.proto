@@ -1,0 +1,17 @@
+syntax = "proto3";
+package setara.document.v1;
+
+option go_package = "setara/x/document/types";
+
+// Document defines the Document message.
+message Document {
+  string index = 1;
+  string hash = 2;
+  string ipfs_cid = 3;
+  string org_id = 4;
+  string doc_type = 5;
+  string metadata = 6;
+  string issuer = 7;
+  string recipient = 8;
+  int64 issued_at = 9;
+}

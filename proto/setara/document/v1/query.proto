@@ -1,10 +1,12 @@
 syntax = "proto3";
+
 package setara.document.v1;
 
 import "amino/amino.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
+import "setara/document/v1/document.proto";
 import "setara/document/v1/params.proto";
 
 option go_package = "setara/x/document/types";
@@ -14,6 +16,16 @@ service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
     option (google.api.http).get = "/setara/document/v1/params";
+  }
+
+  // ListDocument Queries a list of Document items.
+  rpc GetDocument(QueryGetDocumentRequest) returns (QueryGetDocumentResponse) {
+    option (google.api.http).get = "/setara/document/v1/document/{index}";
+  }
+
+  // ListDocument defines the ListDocument RPC.
+  rpc ListDocument(QueryAllDocumentRequest) returns (QueryAllDocumentResponse) {
+    option (google.api.http).get = "/setara/document/v1/document";
   }
 }
 
@@ -27,4 +39,25 @@ message QueryParamsResponse {
     (gogoproto.nullable) = false,
     (amino.dont_omitempty) = true
   ];
+}
+
+// QueryGetDocumentRequest defines the QueryGetDocumentRequest message.
+message QueryGetDocumentRequest {
+  string index = 1;
+}
+
+// QueryGetDocumentResponse defines the QueryGetDocumentResponse message.
+message QueryGetDocumentResponse {
+  Document document = 1 [(gogoproto.nullable) = false];
+}
+
+// QueryAllDocumentRequest defines the QueryAllDocumentRequest message.
+message QueryAllDocumentRequest {
+  cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+// QueryAllDocumentResponse defines the QueryAllDocumentResponse message.
+message QueryAllDocumentResponse {
+  repeated Document document = 1 [(gogoproto.nullable) = false];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2;
 }
