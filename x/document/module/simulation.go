@@ -44,6 +44,21 @@ func (am AppModule) WeightedOperations(simState module.SimulationState) []simtyp
 		weightMsgRegisterDocument,
 		documentsimulation.SimulateMsgRegisterDocument(am.authKeeper, am.bankKeeper, am.keeper, simState.TxConfig),
 	))
+	const (
+		opWeightMsgVerifyDocument          = "op_weight_msg_document"
+		defaultWeightMsgVerifyDocument int = 100
+	)
+
+	var weightMsgVerifyDocument int
+	simState.AppParams.GetOrGenerate(opWeightMsgVerifyDocument, &weightMsgVerifyDocument, nil,
+		func(_ *rand.Rand) {
+			weightMsgVerifyDocument = defaultWeightMsgVerifyDocument
+		},
+	)
+	operations = append(operations, simulation.NewWeightedOperation(
+		weightMsgVerifyDocument,
+		documentsimulation.SimulateMsgVerifyDocument(am.authKeeper, am.bankKeeper, am.keeper, simState.TxConfig),
+	))
 
 	return operations
 }

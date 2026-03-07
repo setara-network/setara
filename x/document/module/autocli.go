@@ -45,6 +45,12 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					Short:          "Send a register-document tx",
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "hash"}, {ProtoField: "ipfs_cid"}, {ProtoField: "org_id"}, {ProtoField: "doc_type"}, {ProtoField: "metadata"}, {ProtoField: "recipient"}},
 				},
+				{
+					RpcMethod:      "VerifyDocument",
+					Use:            "verify-document [document-id]",
+					Short:          "Send a verify-document tx",
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "document_id"}},
+				},
 			},
 		},
 	}

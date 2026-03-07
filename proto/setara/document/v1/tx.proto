@@ -20,6 +20,9 @@ service Msg {
 
   // RegisterDocument defines the RegisterDocument RPC.
   rpc RegisterDocument(MsgRegisterDocument) returns (MsgRegisterDocumentResponse);
+
+  // VerifyDocument defines the VerifyDocument RPC.
+  rpc VerifyDocument(MsgVerifyDocument) returns (MsgVerifyDocumentResponse);
 }
 
 // MsgUpdateParams is the Msg/UpdateParams request type.
@@ -57,3 +60,13 @@ message MsgRegisterDocument {
 
 // MsgRegisterDocumentResponse defines the MsgRegisterDocumentResponse message.
 message MsgRegisterDocumentResponse {}
+
+// MsgVerifyDocument defines the MsgVerifyDocument message.
+message MsgVerifyDocument {
+  option (cosmos.msg.v1.signer) = "creator";
+  string creator = 1 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+  string document_id = 2;
+}
+
+// MsgVerifyDocumentResponse defines the MsgVerifyDocumentResponse message.
+message MsgVerifyDocumentResponse {}
