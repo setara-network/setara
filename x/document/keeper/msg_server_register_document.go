@@ -4,12 +4,16 @@ import (
 	"context"
 	"crypto/sha256"
 	"encoding/hex"
+	"regexp"
 
 	"setara/x/document/types"
 
 	errorsmod "cosmossdk.io/errors"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
+
+// hashRegex validates document hash format: optional "sha256:" prefix + 64 hex chars
+var hashRegex = regexp.MustCompile(`^(sha256:)?[0-9a-fA-F]{64}$`)
 
 func (k msgServer) RegisterDocument(ctx context.Context, msg *types.MsgRegisterDocument) (*types.MsgRegisterDocumentResponse, error) {
 	if _, err := k.addressCodec.StringToBytes(msg.Creator); err != nil {
@@ -19,11 +23,25 @@ func (k msgServer) RegisterDocument(ctx context.Context, msg *types.MsgRegisterD
 	if msg.Hash == "" {
 		return nil, errorsmod.Wrap(types.ErrInvalidHash, "document hash cannot be empty")
 	}
+	if !hashRegex.MatchString(msg.Hash) {
+		return nil, errorsmod.Wrap(types.ErrInvalidHash, "invalid hash format, expected sha256:<64 hex chars> or 64 hex chars")
+	}
 	if msg.IpfsCid == "" {
 		return nil, errorsmod.Wrap(types.ErrInvalidIpfsCid, "IPFS CID cannot be empty")
 	}
+	if len(msg.IpfsCid) > 256 {
+		return nil, errorsmod.Wrap(types.ErrInvalidIpfsCid, "IPFS CID too long")
+	}
 	if msg.OrgId == "" {
 		return nil, errorsmod.Wrap(types.ErrInvalidOrgId, "organization ID cannot be empty")
+	}
+	// Enforce metadata size limit (max 4KB)
+	if len(msg.Metadata) > 4096 {
+		return nil, errorsmod.Wrap(types.ErrInvalidHash, "metadata too large (max 4096 bytes)")
+	}
+	// Enforce recipient size limit
+	if len(msg.Recipient) > 256 {
+		return nil, errorsmod.Wrap(types.ErrInvalidHash, "recipient too long (max 256 chars)")
 	}
 
 	// Verify the sender is the admin of the specified organization

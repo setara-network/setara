@@ -18,12 +18,24 @@ func (k msgServer) VerifyDocument(ctx context.Context, msg *types.MsgVerifyDocum
 		return nil, errorsmod.Wrap(types.ErrDocNotFound, "document ID cannot be empty")
 	}
 
-	has, err := k.Document.Has(ctx, msg.DocumentId)
+	doc, err := k.Document.Get(ctx, msg.DocumentId)
 	if err != nil {
-		return nil, err
-	}
-	if !has {
 		return nil, errorsmod.Wrap(types.ErrDocNotFound, msg.DocumentId)
+	}
+
+	// Only the org admin who issued the document can verify it
+	admin, isActive, found, orgErr := k.orgKeeper.GetOrganization(ctx, doc.OrgId)
+	if orgErr != nil {
+		return nil, errorsmod.Wrap(types.ErrUnauthorized, "failed to look up organization")
+	}
+	if !found {
+		return nil, errorsmod.Wrap(types.ErrUnauthorized, "document's organization not found")
+	}
+	if !isActive {
+		return nil, errorsmod.Wrap(types.ErrUnauthorized, "document's organization is not active")
+	}
+	if admin != msg.Creator {
+		return nil, errorsmod.Wrap(types.ErrUnauthorized, "only the organization admin can verify documents")
 	}
 
 	sdkCtx := sdk.UnwrapSDKContext(ctx)

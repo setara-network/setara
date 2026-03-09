@@ -260,7 +260,7 @@ func (s *Store) DeductCredits(orgID string, credits float64, txType, reference s
 	}
 
 	if balance < credits {
-		return fmt.Errorf("insufficient credits: %.0f available, %.0f required", balance, credits)
+		return fmt.Errorf("insufficient credits")
 	}
 
 	_, err = tx.Exec(`UPDATE wallets SET credits = credits - ? WHERE org_id = ?`, credits, orgID)

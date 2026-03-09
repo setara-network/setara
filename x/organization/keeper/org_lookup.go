@@ -3,6 +3,7 @@ package keeper
 import (
 	"context"
 	"errors"
+	"fmt"
 
 	"cosmossdk.io/collections"
 )
@@ -25,7 +26,7 @@ func (k Keeper) GetOrganization(ctx context.Context, orgId string) (admin string
 	for ; iter.Valid(); iter.Next() {
 		o, err := iter.Value()
 		if err != nil {
-			continue
+			return "", false, false, fmt.Errorf("failed to read organization during scan: %w", err)
 		}
 		if o.Name == orgId {
 			return o.Admin, o.IsActive, true, nil

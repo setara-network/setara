@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"time"
 
 	"setara/api/config"
 	"setara/api/handlers"
@@ -31,10 +32,10 @@ func main() {
 	mux := http.NewServeMux()
 
 	// ==========================================
-	// PUBLIC routes (no auth)
+	// PUBLIC routes (no auth, rate limited)
 	// ==========================================
-	mux.HandleFunc("POST /api/v1/register", orgHandler.Register)
-	mux.HandleFunc("GET /api/v1/verify", docHandler.VerifyDocument)
+	mux.Handle("POST /api/v1/register", middleware.PublicRateLimit(http.HandlerFunc(orgHandler.Register)))
+	mux.Handle("GET /api/v1/verify", middleware.PublicRateLimit(http.HandlerFunc(docHandler.VerifyDocument)))
 	mux.HandleFunc("GET /health", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`{"status":"ok"}`))
 	})
@@ -64,12 +65,23 @@ func main() {
 
 	mux.Handle("/api/v1/admin/", middleware.SuperAdminAuth(cfg.AdminSecret)(adminMux))
 
-	handler := middleware.CORS(middleware.JSON(mux))
+	// Apply global middleware: body size limit → security headers → CORS → content-type
+	handler := middleware.CORS(middleware.SecurityHeaders(middleware.MaxBodySize(1 << 20)(middleware.JSON(mux)))) // 1MB max body
 
 	addr := fmt.Sprintf(":%s", cfg.Port)
 	log.Printf("Setara API starting on %s", addr)
 	log.Printf("Public:  POST /api/v1/register, GET /api/v1/verify")
 	log.Printf("Org:     /api/v1/me/* (X-API-Key header)")
 	log.Printf("Admin:   /api/v1/admin/* (X-Admin-Secret header)")
-	log.Fatal(http.ListenAndServe(addr, handler))
+
+	srv := &http.Server{
+		Addr:              addr,
+		Handler:           handler,
+		ReadTimeout:       15 * time.Second,
+		WriteTimeout:      30 * time.Second,
+		IdleTimeout:       60 * time.Second,
+		ReadHeaderTimeout: 5 * time.Second,
+		MaxHeaderBytes:    1 << 16, // 64KB max headers
+	}
+	log.Fatal(srv.ListenAndServe())
 }

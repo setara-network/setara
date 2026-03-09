@@ -13,9 +13,13 @@ RUN go build -o /usr/local/bin/setarad ./cmd/setarad
 FROM alpine:3.21
 
 RUN apk add --no-cache ca-certificates curl
+RUN adduser -D -u 1000 appuser
 
 COPY --from=builder /usr/local/bin/setara-api /usr/local/bin/setara-api
 COPY --from=builder /usr/local/bin/setarad /usr/local/bin/setarad
+
+RUN mkdir -p /data && chown appuser:appuser /data
+USER appuser
 
 EXPOSE 8888
 

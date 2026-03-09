@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 
 	"setara/api/middleware"
@@ -66,28 +67,22 @@ func (h *WalletHandler) AdminCreditWallet(w http.ResponseWriter, r *http.Request
 		return
 	}
 
-	if req.Credits == 0 {
-		http.Error(w, `{"error":"credits must be non-zero"}`, http.StatusBadRequest)
+	if req.Credits <= 0 {
+		http.Error(w, `{"error":"credits must be a positive number"}`, http.StatusBadRequest)
 		return
 	}
 
-	txType := "credit"
-	if req.Credits < 0 {
-		txType = "adjustment"
+	if req.Credits > 1000000 {
+		http.Error(w, `{"error":"credits cannot exceed 1,000,000 per transaction"}`, http.StatusBadRequest)
+		return
 	}
 
-	if req.Credits < 0 {
-		// Deducting credits
-		if err := h.db.DeductCredits(orgID, -req.Credits, txType, req.Reference); err != nil {
-			http.Error(w, `{"error":"`+err.Error()+`"}`, http.StatusBadRequest)
-			return
-		}
-	} else {
-		if err := h.db.CreditWallet(orgID, req.Credits, txType, req.Reference); err != nil {
-			http.Error(w, `{"error":"failed to credit wallet"}`, http.StatusInternalServerError)
-			return
-		}
+	if err := h.db.CreditWallet(orgID, req.Credits, "credit", req.Reference); err != nil {
+		http.Error(w, `{"error":"failed to credit wallet"}`, http.StatusInternalServerError)
+		return
 	}
+
+	log.Printf("AUDIT: admin credited %.0f credits to org %s, ref: %s", req.Credits, orgID, req.Reference)
 
 	wallet, _ := h.db.GetWallet(orgID)
 	json.NewEncoder(w).Encode(map[string]interface{}{
@@ -121,10 +116,26 @@ func (h *WalletHandler) AdminUpdateBilling(w http.ResponseWriter, r *http.Reques
 		return
 	}
 
+	// Validate non-negative values
+	if req.DocFeeCredits != nil && *req.DocFeeCredits < 0 {
+		http.Error(w, `{"error":"doc_fee_credits cannot be negative"}`, http.StatusBadRequest)
+		return
+	}
+	if req.MonthlyNodeFee != nil && *req.MonthlyNodeFee < 0 {
+		http.Error(w, `{"error":"monthly_node_fee cannot be negative"}`, http.StatusBadRequest)
+		return
+	}
+	if req.CreditRate != nil && *req.CreditRate <= 0 {
+		http.Error(w, `{"error":"credit_rate must be positive"}`, http.StatusBadRequest)
+		return
+	}
+
 	if err := h.db.UpdateBillingConfig(orgID, &req); err != nil {
 		http.Error(w, `{"error":"failed to update billing"}`, http.StatusInternalServerError)
 		return
 	}
+
+	log.Printf("AUDIT: admin updated billing for org %s", orgID)
 
 	bc, _ := h.db.GetBillingConfig(orgID)
 	json.NewEncoder(w).Encode(bc)

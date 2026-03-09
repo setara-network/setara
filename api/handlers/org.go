@@ -2,7 +2,10 @@ package handlers
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
+	"net/mail"
+	"regexp"
 
 	"setara/api/models"
 	"setara/api/store"
@@ -15,6 +18,9 @@ type OrgHandler struct {
 func NewOrgHandler(db *store.Store) *OrgHandler {
 	return &OrgHandler{db: db}
 }
+
+// phonePattern validates phone numbers (digits, optional +, spaces, dashes)
+var phonePattern = regexp.MustCompile(`^\+?[\d\s\-()]{7,20}$`)
 
 // Register is a PUBLIC endpoint — new orgs self-register here
 func (h *OrgHandler) Register(w http.ResponseWriter, r *http.Request) {
@@ -29,6 +35,28 @@ func (h *OrgHandler) Register(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Validate field lengths
+	if len(req.Name) > 200 {
+		http.Error(w, `{"error":"name too long (max 200 chars)"}`, http.StatusBadRequest)
+		return
+	}
+	if len(req.FirstName) > 100 || len(req.LastName) > 100 {
+		http.Error(w, `{"error":"first_name/last_name too long (max 100 chars)"}`, http.StatusBadRequest)
+		return
+	}
+
+	// Validate email format
+	if _, err := mail.ParseAddress(req.Email); err != nil {
+		http.Error(w, `{"error":"invalid email format"}`, http.StatusBadRequest)
+		return
+	}
+
+	// Validate phone format
+	if !phonePattern.MatchString(req.Phone) {
+		http.Error(w, `{"error":"invalid phone format"}`, http.StatusBadRequest)
+		return
+	}
+
 	org, err := h.db.RegisterOrg(&req)
 	if err != nil {
 		if err.Error() == "email already registered" {
@@ -38,6 +66,8 @@ func (h *OrgHandler) Register(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, `{"error":"registration failed"}`, http.StatusInternalServerError)
 		return
 	}
+
+	log.Printf("AUDIT: new org registered: %s (%s), email: %s", org.Name, org.ID, req.Email)
 
 	w.WriteHeader(http.StatusCreated)
 	json.NewEncoder(w).Encode(map[string]interface{}{
@@ -80,6 +110,7 @@ func (h *OrgHandler) DeactivateOrg(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, `{"error":"failed to deactivate"}`, http.StatusInternalServerError)
 		return
 	}
+	log.Printf("AUDIT: admin deactivated org %s", orgID)
 	json.NewEncoder(w).Encode(map[string]string{"status": "deactivated", "org_id": orgID})
 }
 
@@ -89,5 +120,6 @@ func (h *OrgHandler) ActivateOrg(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, `{"error":"failed to activate"}`, http.StatusInternalServerError)
 		return
 	}
+	log.Printf("AUDIT: admin activated org %s", orgID)
 	json.NewEncoder(w).Encode(map[string]string{"status": "activated", "org_id": orgID})
 }
