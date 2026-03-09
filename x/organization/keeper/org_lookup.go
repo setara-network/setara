@@ -2,19 +2,35 @@ package keeper
 
 import (
 	"context"
+	"errors"
 
 	"cosmossdk.io/collections"
 )
 
-// GetOrganization returns the admin, active status, and whether the org was found.
-// This method is used by other modules (e.g. document) for access control.
 func (k Keeper) GetOrganization(ctx context.Context, orgId string) (admin string, isActive bool, found bool, err error) {
 	org, err := k.Organization.Get(ctx, orgId)
-	if err != nil {
-		if err == collections.ErrNotFound {
-			return "", false, false, nil
-		}
+	if err == nil {
+		return org.Admin, org.IsActive, true, nil
+	}
+	if !errors.Is(err, collections.ErrNotFound) {
 		return "", false, false, err
 	}
-	return org.Admin, org.IsActive, true, nil
+
+	iter, err := k.Organization.Iterate(ctx, nil)
+	if err != nil {
+		return "", false, false, err
+	}
+	defer iter.Close()
+
+	for ; iter.Valid(); iter.Next() {
+		o, err := iter.Value()
+		if err != nil {
+			continue
+		}
+		if o.Name == orgId {
+			return o.Admin, o.IsActive, true, nil
+		}
+	}
+
+	return "", false, false, nil
 }

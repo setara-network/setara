@@ -1,0 +1,80 @@
+version: "3.8"
+
+# Setara Testnet Stack
+# Run alongside existing mainnet (systemd) on the same server.
+# Uses different ports to avoid conflicts with mainnet.
+#
+# Mainnet ports (systemd):  26656, 26657, 1317, 9090, 8888
+# Testnet ports (docker):   36656, 36657, 11317, 19090, 9888
+# IPFS ports:               4001, 5001, 8080
+
+services:
+  setara-testnet-node:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: setara-testnet-node
+    ports:
+      - "36656:26656"  # P2P
+      - "36657:26657"  # RPC
+      - "11317:1317"   # REST API
+      - "19090:9090"   # gRPC
+    volumes:
+      - testnet-data:/root/.setara
+      - ./scripts:/scripts
+      - ./genesis:/genesis
+    environment:
+      - MONIKER=${MONIKER:-setara-testnet-node}
+      - CHAIN_ID=setara-testnet-1
+      - SEEDS=${TESTNET_SEEDS:-}
+      - PERSISTENT_PEERS=${TESTNET_PERSISTENT_PEERS:-}
+    entrypoint: ["/bin/bash", "/scripts/start.sh"]
+    restart: unless-stopped
+    networks:
+      - setara-testnet
+
+  setara-testnet-api:
+    build:
+      context: ..
+      dockerfile: Dockerfile.api
+    container_name: setara-testnet-api
+    ports:
+      - "9888:8888"
+    volumes:
+      - testnet-api-data:/data
+    environment:
+      - API_PORT=8888
+      - CHAIN_RPC=http://setara-testnet-node:26657
+      - CHAIN_GRPC=setara-testnet-node:9090
+      - CHAIN_ID=setara-testnet-1
+      - DB_PATH=/data/setara-testnet-api.db
+      - ADMIN_SECRET=${TESTNET_ADMIN_SECRET:-}
+    depends_on:
+      - setara-testnet-node
+    restart: unless-stopped
+    networks:
+      - setara-testnet
+
+  ipfs:
+    image: ipfs/kubo:latest
+    container_name: setara-ipfs
+    ports:
+      - "4001:4001"   # Swarm
+      - "5001:5001"   # API
+      - "8080:8080"   # Gateway
+    volumes:
+      - ipfs-data:/data/ipfs
+    environment:
+      - IPFS_PROFILE=server
+    restart: unless-stopped
+    networks:
+      - setara-testnet
+
+volumes:
+  testnet-data:
+  testnet-api-data:
+  ipfs-data:
+
+networks:
+  setara-testnet:
+    driver: bridge

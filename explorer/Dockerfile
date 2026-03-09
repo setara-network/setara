@@ -4,6 +4,7 @@ RUN git clone https://github.com/ping-pub/explorer.git /app
 WORKDIR /app
 RUN yarn install --frozen-lockfile
 COPY chain.json /app/chains/mainnet/setara.json
+COPY chain-testnet.json /app/chains/mainnet/setara-testnet.json
 COPY setara_light.png /app/src/assets/logo.png
 COPY setara-icon.png /app/setara-icon.png
 COPY customize.sh /app/customize.sh

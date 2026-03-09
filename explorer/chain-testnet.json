@@ -1,0 +1,37 @@
+{
+  "chain_name": "setara-testnet",
+  "coingecko": "",
+  "api": [
+    {
+      "address": "https://testnet-rpc.setara.network",
+      "provider": "Setara"
+    }
+  ],
+  "rpc": [
+    {
+      "address": "https://testnet-rpc.setara.network",
+      "provider": "Setara"
+    }
+  ],
+  "grpc": [
+    {
+      "address": "testnet-grpc.setara.network",
+      "provider": "Setara"
+    }
+  ],
+  "sdk_version": "0.53.6",
+  "coin_type": "118",
+  "min_tx_fee": "0",
+  "addr_prefix": "setara",
+  "logo": "/logos/setara.png",
+  "theme_color": "#E8613C",
+  "assets": [
+    {
+      "base": "setara",
+      "symbol": "SETARA",
+      "exponent": "0",
+      "coingecko_id": "",
+      "logo": "/logos/setara.png"
+    }
+  ]
+}
