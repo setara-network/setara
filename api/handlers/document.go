@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os/exec"
 	"regexp"
+	"strings"
 
 	"setara/api/config"
 	"setara/api/middleware"
@@ -25,7 +26,8 @@ func NewDocumentHandler(db *store.Store, cfg *config.Config) *DocumentHandler {
 var hashPattern = regexp.MustCompile(`^(sha256:)?[0-9a-fA-F]{64}$`)
 
 // safeStringPattern allows alphanumeric, spaces, common punctuation — no control chars or shell metacharacters
-var safeStringPattern = regexp.MustCompile(`^[\p{L}\p{N}\s\-_.,;:@/(){}[\]"'+=!?#%&*<>|~` + "`" + `]{0,2048}$`)
+// safeStringPattern: we just check length in code; this pattern rejects control chars
+var safeStringPattern = regexp.MustCompile(`^[^\x00-\x1f]*$`)
 
 // RegisterDocument is an org-authenticated endpoint
 func (h *DocumentHandler) RegisterDocument(w http.ResponseWriter, r *http.Request) {
@@ -141,13 +143,23 @@ func (h *DocumentHandler) RegisterDocument(w http.ResponseWriter, r *http.Reques
 
 	newWallet, _ := h.db.GetWallet(orgID)
 
+	// Extract only the JSON portion from setarad output (it may print non-JSON lines like "gas estimate: ...")
+	var txOutput json.RawMessage
+	outStr := string(output)
+	if idx := strings.Index(outStr, "{"); idx >= 0 {
+		txOutput = json.RawMessage(outStr[idx:])
+	} else {
+		txOutput = json.RawMessage(`{}`)
+	}
+
+	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusCreated)
 	json.NewEncoder(w).Encode(map[string]interface{}{
 		"status":            "submitted",
 		"hash":              req.Hash,
 		"credits_deducted":  billing.DocFeeCredits,
 		"credits_remaining": newWallet.Credits,
-		"tx_output":         json.RawMessage(output),
+		"tx_output":         txOutput,
 	})
 }
 
