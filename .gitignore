@@ -1,5 +1,3 @@
-vue/node_modules
-vue/dist
 release/
 .idea/
 .vscode/
@@ -7,6 +5,5 @@ release/
 *.dot
 *.log
 *.ign
-website/node_modules/
-website/.next/
 *.db
+setara-api-linux

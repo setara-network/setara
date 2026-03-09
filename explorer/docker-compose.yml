@@ -1,9 +1,0 @@
-services:
-  explorer:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: setara-explorer
-    ports:
-      - "8090:80"
-    restart: unless-stopped

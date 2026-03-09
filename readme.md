@@ -39,8 +39,7 @@ Setara is a purpose-built blockchain for document management, built on the Cosmo
 │                                                      │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐          │
 │  │ Org Node │  │ Org Node │  │ Org Node │  ...      │
-│  │ setarad  │  │ setarad  │  │ setarad  │          │
-│  │ + IPFS   │  │ + IPFS   │  │ + IPFS   │          │
+│  │ setarad  │  │ + IPFS   │  │ setarad  │          │
 │  └────┬─────┘  └────┬─────┘  └────┬─────┘          │
 │       │              │              │                │
 │       └──────────────┼──────────────┘                │
@@ -60,9 +59,16 @@ Setara is a purpose-built blockchain for document management, built on the Cosmo
 └─────────────────────────────────────────────────────┘
 ```
 
-**Setara hosts:** Seed nodes, API server, Explorer, Admin Panel, Website
+## Repositories
 
-**Organizations host:** Validator node + IPFS node (via Docker Compose)
+| Repo | Description | Visibility |
+|------|-------------|------------|
+| **[setara](https://github.com/setara-network/setara)** | Blockchain core — chain modules, CLI, protobuf | Public |
+| **[website](https://github.com/setara-network/website)** | setara.network — official website | Public |
+| **[explorer](https://github.com/setara-network/explorer)** | Block explorer (Ping.pub) | Public |
+| **[networks](https://github.com/setara-network/networks)** | Genesis files and network configs | Public |
+| **setara-api** | REST API — billing, wallets, org management | Private |
+| **admin** | Super admin panel | Private |
 
 ## Quick Start
 
@@ -84,9 +90,11 @@ You'll receive your `org_id`, `api_key`, and **5,000 free credits**.
 
 ### 2. Run a Validator Node
 
+See the [node setup guide](documentation/run-node.md) or use Docker:
+
 ```bash
-git clone https://github.com/setara-network/setara.git
-cd setara/docker
+git clone https://github.com/setara-network/networks.git
+cd networks/testnet
 cp .env.example .env    # Configure MONIKER, PEERS
 docker compose up -d    # Starts setarad + IPFS
 ```
@@ -123,16 +131,14 @@ curl https://api.setara.network/api/v1/verify?hash=sha256:your_document_hash
 
 ```
 setara/
-├── cmd/setarad/            # Chain binary
-├── x/document/             # Document module (register, verify, query)
-├── x/organization/         # Organization module (register, access control)
-├── api/                    # REST API (wallet, billing, org management)
-├── docker/                 # Docker Compose deployment for orgs
-├── explorer/               # Block explorer (Ping.pub)
-├── website/                # setara.network
-├── admin/                  # Super admin panel
-├── docs/                   # Whitepaper, API docs, guides
-└── proto/                  # Protobuf definitions
+├── app/                       # Cosmos SDK application config
+├── cmd/setarad/               # Chain binary (CLI)
+├── x/document/                # Document module (register, verify, query)
+├── x/organization/            # Organization module (register, access control)
+├── proto/                     # Protobuf definitions
+├── docker/                    # Docker Compose deployment for orgs
+├── documentation/             # Whitepaper, API docs, guides
+└── testutil/                  # Test utilities
 ```
 
 ## API
@@ -148,13 +154,14 @@ setara/
 | Admin | `X-Admin-Secret` | `POST /api/v1/admin/wallets/{id}/credit` | Add/deduct credits |
 | Admin | `X-Admin-Secret` | `PATCH /api/v1/admin/billing/{id}` | Update pricing |
 
+Full API reference: [documentation/api.md](documentation/api.md)
+
 ## Billing
 
 - **1 credit = 1 INR** (configurable per organization)
 - **1 credit per document** by default (configurable)
 - **5,000 free credits** on signup
 - Node fees: Free during testnet, paid on mainnet
-- Only super admin can manage wallets
 
 ## Built With
 
@@ -165,7 +172,7 @@ setara/
 
 ## Contributing
 
-Setara is open source. Contributions are welcome.
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before submitting a PR.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/my-feature`)
@@ -174,7 +181,7 @@ Setara is open source. Contributions are welcome.
 
 ## License
 
-[Apache 2.0](LICENSE)
+[Apache License 2.0](LICENSE)
 
 ---
 
