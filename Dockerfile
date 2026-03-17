@@ -13,11 +13,16 @@ FROM alpine:3.21
 
 RUN apk add --no-cache ca-certificates curl jq bash
 
+# Run as non-root user
+RUN addgroup -S setara && adduser -S setara -G setara
 COPY --from=builder /usr/local/bin/setarad /usr/local/bin/setarad
+
+USER setara
+ENV HOME=/home/setara
 
 EXPOSE 26656 26657 1317 9090
 
-VOLUME /root/.setara
+VOLUME /home/setara/.setara
 
 ENTRYPOINT ["setarad"]
 CMD ["start"]

@@ -20,9 +20,12 @@ func TestGenesisState_Validate(t *testing.T) {
 			valid:    true,
 		},
 		{
-			desc:     "valid genesis state",
-			genState: &types.GenesisState{OrganizationMap: []types.Organization{{Index: "0"}, {Index: "1"}}},
-			valid:    true,
+			desc: "valid genesis state",
+			genState: &types.GenesisState{OrganizationMap: []types.Organization{
+				{Index: "0", Name: "org-alpha", Admin: "setara1abc"},
+				{Index: "1", Name: "org-beta", Admin: "setara1def"},
+			}},
+			valid: true,
 		}, {
 			desc: "duplicated organization",
 			genState: &types.GenesisState{

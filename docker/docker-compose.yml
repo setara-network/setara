@@ -7,14 +7,14 @@ services:
       dockerfile: Dockerfile
     container_name: setara-node
     ports:
-      - "26656:26656" # P2P
-      - "26657:26657" # RPC
-      - "1317:1317"   # REST API
-      - "9090:9090"   # gRPC
+      - "26656:26656"             # P2P (must be public for peering)
+      - "127.0.0.1:26657:26657"   # RPC (localhost only)
+      - "127.0.0.1:1317:1317"     # REST API (localhost only)
+      - "127.0.0.1:9090:9090"     # gRPC (localhost only)
     volumes:
-      - setara-data:/root/.setara
-      - ./scripts:/scripts
-      - ./genesis:/genesis
+      - setara-data:/home/setara/.setara
+      - ./scripts:/scripts:ro
+      - ./genesis:/genesis:ro
     environment:
       - MONIKER=${MONIKER:-setara-node}
       - CHAIN_ID=${CHAIN_ID:-setara-testnet-1}
@@ -22,6 +22,12 @@ services:
       - PERSISTENT_PEERS=${PERSISTENT_PEERS:-}
     entrypoint: ["/bin/bash", "/scripts/start.sh"]
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:26657/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
     networks:
       - setara
 
@@ -31,7 +37,7 @@ services:
       dockerfile: Dockerfile.api
     container_name: setara-api
     ports:
-      - "8888:8888"
+      - "127.0.0.1:8888:8888"
     volumes:
       - api-data:/data
     environment:
@@ -40,12 +46,16 @@ services:
       - CHAIN_GRPC=setara-node:9090
       - CHAIN_ID=${CHAIN_ID:-setara-testnet-1}
       - DB_PATH=/data/setara-api.db
-      - RAZORPAY_KEY_ID=${RAZORPAY_KEY_ID:-}
-      - RAZORPAY_SECRET=${RAZORPAY_SECRET:-}
-      - ADMIN_SECRET=${ADMIN_SECRET:-}
+      - ADMIN_SECRET=${ADMIN_SECRET:?ADMIN_SECRET must be set}
     depends_on:
-      - setara-node
+      setara-node:
+        condition: service_healthy
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/api/v1/verify?hash=healthcheck"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     networks:
       - setara
 
@@ -53,14 +63,19 @@ services:
     image: ipfs/kubo:latest
     container_name: setara-ipfs
     ports:
-      - "4001:4001"   # Swarm
-      - "127.0.0.1:5001:5001"   # API (localhost only)
-      - "8080:8080"             # Gateway
+      - "4001:4001"               # Swarm (must be public for IPFS)
+      - "127.0.0.1:5001:5001"     # API (localhost only)
+      - "127.0.0.1:8080:8080"     # Gateway (localhost only)
     volumes:
       - ipfs-data:/data/ipfs
     environment:
       - IPFS_PROFILE=server
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "ipfs", "id"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     networks:
       - setara
 

@@ -7,3 +7,13 @@ release/
 *.ign
 *.db
 setara-api-linux
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+credentials.json
+secrets.yaml

@@ -26,6 +26,7 @@ type Keeper struct {
 	orgKeeper  types.OrganizationKeeper
 	Document   collections.Map[string, types.Document]
 	HashIndex  collections.Map[string, string] // hash -> document index
+	Verified   collections.Map[string, string] // docId -> "verifier|timestamp"
 }
 
 func NewKeeper(
@@ -54,6 +55,7 @@ func NewKeeper(
 		Params:     collections.NewItem(sb, types.ParamsKey, "params", codec.CollValue[types.Params](cdc)),
 		Document:   collections.NewMap(sb, types.DocumentKey, "document", collections.StringKey, codec.CollValue[types.Document](cdc)),
 		HashIndex:  collections.NewMap(sb, types.HashIndexKey, "hash_index", collections.StringKey, collections.StringValue),
+		Verified:   collections.NewMap(sb, types.VerifiedKey, "verified", collections.StringKey, collections.StringValue),
 	}
 
 	schema, err := sb.Build()

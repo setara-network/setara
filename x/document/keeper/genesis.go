@@ -12,6 +12,12 @@ func (k Keeper) InitGenesis(ctx context.Context, genState types.GenesisState) er
 		if err := k.Document.Set(ctx, elem.Index, elem); err != nil {
 			return err
 		}
+		// Populate hash -> docId index so documents are findable by hash
+		if elem.Hash != "" {
+			if err := k.HashIndex.Set(ctx, elem.Hash, elem.Index); err != nil {
+				return err
+			}
+		}
 	}
 
 	return k.Params.Set(ctx, genState.Params)

@@ -17,3 +17,6 @@ const (
 
 // ParamsKey is the prefix to retrieve all Params
 var ParamsKey = collections.NewPrefix("p_organization")
+
+// NameIndexKey is the prefix for the name-to-org-ID mapping
+var NameIndexKey = collections.NewPrefix("organization/name_index/")

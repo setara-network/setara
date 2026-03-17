@@ -12,6 +12,12 @@ func (k Keeper) InitGenesis(ctx context.Context, genState types.GenesisState) er
 		if err := k.Organization.Set(ctx, elem.Index, elem); err != nil {
 			return err
 		}
+		// Populate name -> orgId index so orgs are findable by name
+		if elem.Name != "" {
+			if err := k.NameIndex.Set(ctx, elem.Name, elem.Index); err != nil {
+				return err
+			}
+		}
 	}
 
 	return k.Params.Set(ctx, genState.Params)

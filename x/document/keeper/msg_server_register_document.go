@@ -15,6 +15,9 @@ import (
 // hashRegex validates document hash format: optional "sha256:" prefix + 64 hex chars
 var hashRegex = regexp.MustCompile(`^(sha256:)?[0-9a-fA-F]{64}$`)
 
+// ipfsCidRegex validates IPFS CID v0 (Qm...) and v1 (bafy...) formats
+var ipfsCidRegex = regexp.MustCompile(`^(Qm[1-9A-HJ-NP-Za-km-z]{44,}|b[a-z2-7]{58,})$`)
+
 func (k msgServer) RegisterDocument(ctx context.Context, msg *types.MsgRegisterDocument) (*types.MsgRegisterDocumentResponse, error) {
 	if _, err := k.addressCodec.StringToBytes(msg.Creator); err != nil {
 		return nil, errorsmod.Wrap(err, "invalid authority address")
@@ -31,6 +34,9 @@ func (k msgServer) RegisterDocument(ctx context.Context, msg *types.MsgRegisterD
 	}
 	if len(msg.IpfsCid) > 256 {
 		return nil, errorsmod.Wrap(types.ErrInvalidIpfsCid, "IPFS CID too long")
+	}
+	if !ipfsCidRegex.MatchString(msg.IpfsCid) {
+		return nil, errorsmod.Wrap(types.ErrInvalidIpfsCid, "invalid IPFS CID format, expected CIDv0 (Qm...) or CIDv1 (bafy...)")
 	}
 	if msg.OrgId == "" {
 		return nil, errorsmod.Wrap(types.ErrInvalidOrgId, "organization ID cannot be empty")
@@ -65,9 +71,9 @@ func (k msgServer) RegisterDocument(ctx context.Context, msg *types.MsgRegisterD
 		return nil, errorsmod.Wrap(types.ErrDocAlreadyExists, msg.Hash)
 	}
 
-	// Generate deterministic document ID
+	// Generate deterministic document ID using full SHA256 to avoid collision risk
 	idHash := sha256.Sum256([]byte(msg.Hash + msg.OrgId))
-	docId := hex.EncodeToString(idHash[:8])
+	docId := hex.EncodeToString(idHash[:])
 
 	sdkCtx := sdk.UnwrapSDKContext(ctx)
 

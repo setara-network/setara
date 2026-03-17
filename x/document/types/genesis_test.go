@@ -20,9 +20,12 @@ func TestGenesisState_Validate(t *testing.T) {
 			valid:    true,
 		},
 		{
-			desc:     "valid genesis state",
-			genState: &types.GenesisState{DocumentMap: []types.Document{{Index: "0"}, {Index: "1"}}},
-			valid:    true,
+			desc: "valid genesis state",
+			genState: &types.GenesisState{DocumentMap: []types.Document{
+				{Index: "0", Hash: "abc123", OrgId: "org1", Issuer: "setara1abc"},
+				{Index: "1", Hash: "def456", OrgId: "org1", Issuer: "setara1abc"},
+			}},
+			valid: true,
 		}, {
 			desc: "duplicated document",
 			genState: &types.GenesisState{

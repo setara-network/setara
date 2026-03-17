@@ -20,3 +20,6 @@ var ParamsKey = collections.NewPrefix("p_document")
 
 // HashIndexKey is the prefix for the hash-to-document-index mapping
 var HashIndexKey = collections.NewPrefix("document/hash_index/")
+
+// VerifiedKey is the prefix for verified document records
+var VerifiedKey = collections.NewPrefix("document/verified/")

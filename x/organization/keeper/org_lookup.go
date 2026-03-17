@@ -3,12 +3,12 @@ package keeper
 import (
 	"context"
 	"errors"
-	"fmt"
 
 	"cosmossdk.io/collections"
 )
 
 func (k Keeper) GetOrganization(ctx context.Context, orgId string) (admin string, isActive bool, found bool, err error) {
+	// Direct key lookup by ID
 	org, err := k.Organization.Get(ctx, orgId)
 	if err == nil {
 		return org.Admin, org.IsActive, true, nil
@@ -17,21 +17,22 @@ func (k Keeper) GetOrganization(ctx context.Context, orgId string) (admin string
 		return "", false, false, err
 	}
 
-	iter, err := k.Organization.Iterate(ctx, nil)
+	// Lookup by name via index instead of full-table scan
+	resolvedId, err := k.NameIndex.Get(ctx, orgId)
 	if err != nil {
+		if errors.Is(err, collections.ErrNotFound) {
+			return "", false, false, nil
+		}
 		return "", false, false, err
 	}
-	defer iter.Close()
 
-	for ; iter.Valid(); iter.Next() {
-		o, err := iter.Value()
-		if err != nil {
-			return "", false, false, fmt.Errorf("failed to read organization during scan: %w", err)
+	org, err = k.Organization.Get(ctx, resolvedId)
+	if err != nil {
+		if errors.Is(err, collections.ErrNotFound) {
+			return "", false, false, nil
 		}
-		if o.Name == orgId {
-			return o.Admin, o.IsActive, true, nil
-		}
+		return "", false, false, err
 	}
 
-	return "", false, false, nil
+	return org.Admin, org.IsActive, true, nil
 }
