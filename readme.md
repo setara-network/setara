@@ -158,7 +158,7 @@ Full API reference: [documentation/api.md](documentation/api.md)
 
 ## Billing
 
-- **1 credit = 1 INR** (configurable per organization)
+- **Credits denominated in INR** (configurable per organization)
 - **1 credit per document** by default (configurable)
 - **5,000 free credits** on signup
 - Node fees: Free during testnet, paid on mainnet

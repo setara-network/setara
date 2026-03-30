@@ -68,7 +68,7 @@ The chain has two custom modules:
 
 A REST API server handles:
 - **Organization registration** — Self-service, instant
-- **Credit-based billing** — 1 credit = 1 INR, configurable per org
+- **Credit-based billing** — credits denominated in INR, configurable per org
 - **Document submission** — Validates credits, submits to chain, deducts balance
 - **Public verification** — Anyone can verify via hash
 
@@ -108,7 +108,7 @@ Setara uses a **Proof of Authority** model:
 |------|------|
 | Signup bonus | 5,000 credits (free) |
 | Document registration | 1 credit (default, configurable per org) |
-| Credit rate | 1 credit = 1 INR (default, configurable per org) |
+| Credit rate | Denominated in INR (default, configurable per org) |
 | Validator node | Free (testnet), pricing TBD (mainnet) |
 
 ### 5.2 How It Works
