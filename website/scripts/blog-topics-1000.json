@@ -1,0 +1,6512 @@
+{
+  "metadata": {
+    "total_blogs": 467,
+    "schedule": "10 per day, 9 AM - 6 PM IST",
+    "estimated_completion": "46 days",
+    "seo_strategies": [
+      "GEO",
+      "AIO",
+      "Technical SEO",
+      "Content SEO",
+      "Entity SEO",
+      "Product-led SEO",
+      "pSEO"
+    ]
+  },
+  "pillar_pages": [
+    {
+      "id": "pillar-1",
+      "title": "The Complete Guide to Blockchain Document Verification in India",
+      "slug": "complete-guide-blockchain-document-verification-india",
+      "category": "Technology",
+      "seo_type": "pillar",
+      "priority": "critical"
+    },
+    {
+      "id": "pillar-2",
+      "title": "NBF Compliance for Blockchain: Everything You Need to Know",
+      "slug": "nbf-compliance-blockchain-guide",
+      "category": "Compliance",
+      "seo_type": "pillar",
+      "priority": "critical"
+    },
+    {
+      "id": "pillar-3",
+      "title": "How to Choose a Document Verification Solution for Your Organization",
+      "slug": "choose-document-verification-solution",
+      "category": "Industry",
+      "seo_type": "pillar",
+      "priority": "critical"
+    },
+    {
+      "id": "pillar-4",
+      "title": "Building Applications with Blockchain Document Verification APIs",
+      "slug": "building-apps-blockchain-verification-api",
+      "category": "Tutorials",
+      "seo_type": "pillar",
+      "priority": "critical"
+    },
+    {
+      "id": "pillar-5",
+      "title": "The Future of Digital Credentials in India",
+      "slug": "future-digital-credentials-india",
+      "category": "Industry",
+      "seo_type": "pillar",
+      "priority": "critical"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "What is Proof of Authority and Why Setara Uses It",
+      "slug": "what-is-proof-of-authority-and-why-setara-uses-it",
+      "category": "Technology",
+      "seo_type": "AIO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "proof of authority blockchain",
+        "PoA consensus",
+        "blockchain consensus India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 2,
+      "title": "How SHA-256 Hashing Ensures Document Integrity",
+      "slug": "how-sha-256-hashing-ensures-document-integrity",
+      "category": "Technology",
+      "seo_type": "AIO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "SHA-256 hashing",
+        "document hash verification",
+        "cryptographic hashing"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 3,
+      "title": "Understanding Zero Gas Fee Blockchain Architecture",
+      "slug": "understanding-zero-gas-fee-blockchain-architecture",
+      "category": "Technology",
+      "seo_type": "GEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "zero gas fee blockchain",
+        "no gas fee blockchain",
+        "free blockchain transactions"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 4,
+      "title": "IPFS vs Traditional Storage for Document Management",
+      "slug": "ipfs-vs-traditional-storage-for-document-management",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "IPFS document storage",
+        "decentralized storage",
+        "IPFS vs cloud storage"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 5,
+      "title": "Cosmos SDK: Why We Built Setara on It",
+      "slug": "cosmos-sdk-why-we-built-setara-on-it",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "Cosmos SDK blockchain",
+        "Cosmos SDK India",
+        "AppChain development"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 6,
+      "title": "CometBFT Consensus: Instant Finality for Documents",
+      "slug": "cometbft-consensus-instant-finality-for-documents",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "CometBFT consensus",
+        "Tendermint BFT",
+        "instant finality blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 7,
+      "title": "IBC Protocol: Cross-Chain Document Verification",
+      "slug": "ibc-protocol-cross-chain-document-verification",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "IBC interoperability",
+        "cross-chain blockchain",
+        "inter-blockchain communication"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 8,
+      "title": "How Blockchain Makes Document Fraud Impossible",
+      "slug": "how-blockchain-makes-document-fraud-impossible",
+      "category": "Technology",
+      "seo_type": "AIO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain fraud prevention",
+        "tamper proof documents",
+        "immutable records"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 9,
+      "title": "The Role of Validators in Proof of Authority Networks",
+      "slug": "the-role-of-validators-in-proof-of-authority-networks",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain validators",
+        "PoA validators",
+        "validator node blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 10,
+      "title": "Building REST APIs on Top of Blockchain",
+      "slug": "building-rest-apis-on-top-of-blockchain",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "blockchain REST API",
+        "blockchain API development",
+        "web3 API"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 11,
+      "title": "Document Hashing: A Technical Deep Dive",
+      "slug": "document-hashing-a-technical-deep-dive",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "document hashing explained",
+        "hash function blockchain",
+        "SHA-256 tutorial"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 12,
+      "title": "Blockchain vs Database: When to Use Each for Records",
+      "slug": "blockchain-vs-database-when-to-use-each-for-records",
+      "category": "Technology",
+      "seo_type": "AIO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain vs database",
+        "when to use blockchain",
+        "blockchain for records"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 13,
+      "title": "Understanding On-Chain vs Off-Chain Storage",
+      "slug": "understanding-on-chain-vs-off-chain-storage",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "on-chain vs off-chain",
+        "IPFS on-chain",
+        "blockchain data storage"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 14,
+      "title": "How Blockchain Timestamps Create Legal Evidence",
+      "slug": "how-blockchain-timestamps-create-legal-evidence",
+      "category": "Technology",
+      "seo_type": "GEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain timestamp",
+        "digital evidence blockchain",
+        "blockchain legal proof"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 15,
+      "title": "The Architecture Behind Setara's Document Module",
+      "slug": "the-architecture-behind-setara-s-document-module",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain module architecture",
+        "Cosmos SDK modules",
+        "document blockchain design"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 16,
+      "title": "What Happens When You Register a Document on Blockchain",
+      "slug": "what-happens-when-you-register-a-document-on-blockchain",
+      "category": "Technology",
+      "seo_type": "AIO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "register document blockchain",
+        "blockchain registration process",
+        "document on-chain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 17,
+      "title": "Blockchain Block Explorer: How to Read the Ledger",
+      "slug": "blockchain-block-explorer-how-to-read-the-ledger",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "block explorer tutorial",
+        "read blockchain",
+        "Ping.pub explorer"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 18,
+      "title": "Understanding Transaction Hashes and Block Heights",
+      "slug": "understanding-transaction-hashes-and-block-heights",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "transaction hash explained",
+        "block height blockchain",
+        "blockchain transactions"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 19,
+      "title": "Docker Deployment for Blockchain Nodes",
+      "slug": "docker-deployment-for-blockchain-nodes",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "Docker blockchain node",
+        "containerized blockchain",
+        "Docker Compose validator"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 20,
+      "title": "Content Identifiers (CIDs): How IPFS Addresses Files",
+      "slug": "content-identifiers-cids-how-ipfs-addresses-files",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "IPFS CID explained",
+        "content identifier",
+        "content-addressed storage"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 21,
+      "title": "How Universities Can Eliminate Fake Degree Certificates",
+      "slug": "how-universities-can-eliminate-fake-degree-certificates",
+      "category": "Use Cases",
+      "seo_type": "product-led",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "fake degree prevention",
+        "university blockchain",
+        "degree verification blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 22,
+      "title": "Blockchain for Government Document Management in India",
+      "slug": "blockchain-for-government-document-management-in-india",
+      "category": "Use Cases",
+      "seo_type": "product-led",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "government blockchain India",
+        "e-governance blockchain",
+        "government document verification"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 23,
+      "title": "Why NGOs Need Blockchain for Donor Receipt Verification",
+      "slug": "why-ngos-need-blockchain-for-donor-receipt-verification",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "NGO blockchain",
+        "donor receipt verification",
+        "NGO transparency blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 24,
+      "title": "Healthcare Records on Blockchain: Privacy Meets Transparency",
+      "slug": "healthcare-records-on-blockchain-privacy-meets-transparency",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "healthcare blockchain India",
+        "medical records blockchain",
+        "ABDM blockchain"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 25,
+      "title": "Sports Certificate Fraud: A Blockchain Solution",
+      "slug": "sports-certificate-fraud-a-blockchain-solution",
+      "category": "Use Cases",
+      "seo_type": "product-led",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "sports certificate verification",
+        "fake sports certificates",
+        "athlete credential blockchain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 26,
+      "title": "Supply Chain Document Verification with Blockchain",
+      "slug": "supply-chain-document-verification-with-blockchain",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "supply chain blockchain",
+        "provenance verification",
+        "supply chain documents"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 27,
+      "title": "Legal Document Authentication in the Digital Age",
+      "slug": "legal-document-authentication-in-the-digital-age",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "legal document blockchain",
+        "digital legal verification",
+        "court document blockchain"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 28,
+      "title": "Blockchain for Education Certificates in Schools",
+      "slug": "blockchain-for-education-certificates-in-schools",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "school certificate blockchain",
+        "education blockchain India",
+        "CBSE certificate verification"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 29,
+      "title": "Insurance Claim Verification Using Blockchain",
+      "slug": "insurance-claim-verification-using-blockchain",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "insurance blockchain",
+        "claim verification",
+        "insurance fraud prevention"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 30,
+      "title": "Corporate Compliance Audit Trails on Blockchain",
+      "slug": "corporate-compliance-audit-trails-on-blockchain",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "corporate compliance blockchain",
+        "audit trail blockchain",
+        "regulatory compliance"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 31,
+      "title": "Birth and Death Certificate Verification on Blockchain",
+      "slug": "birth-and-death-certificate-verification-on-blockchain",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "birth certificate blockchain",
+        "death certificate verification",
+        "vital records blockchain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 32,
+      "title": "Land Records on Blockchain: Preventing Property Fraud",
+      "slug": "land-records-on-blockchain-preventing-property-fraud",
+      "category": "Use Cases",
+      "seo_type": "AIO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "land records blockchain",
+        "property verification",
+        "land registry blockchain India"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 33,
+      "title": "Blockchain for Professional License Verification",
+      "slug": "blockchain-for-professional-license-verification",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "professional license blockchain",
+        "license verification",
+        "credential verification"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 34,
+      "title": "How Hospitals Can Verify Medical Certificates Instantly",
+      "slug": "how-hospitals-can-verify-medical-certificates-instantly",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "medical certificate verification",
+        "hospital blockchain",
+        "doctor credential blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 35,
+      "title": "Blockchain for Passport and Visa Document Verification",
+      "slug": "blockchain-for-passport-and-visa-document-verification",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "passport verification blockchain",
+        "visa document blockchain",
+        "immigration blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 36,
+      "title": "Tax Certificate Verification Using Blockchain",
+      "slug": "tax-certificate-verification-using-blockchain",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "tax certificate blockchain",
+        "GST certificate verification",
+        "tax compliance blockchain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 37,
+      "title": "How Coaching Institutes Can Issue Tamper-Proof Certificates",
+      "slug": "how-coaching-institutes-can-issue-tamper-proof-certificates",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "coaching institute blockchain",
+        "coaching certificate verification",
+        "edtech blockchain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 38,
+      "title": "Blockchain for Warranty and Product Authenticity",
+      "slug": "blockchain-for-warranty-and-product-authenticity",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "warranty blockchain",
+        "product authenticity",
+        "anti-counterfeiting blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 39,
+      "title": "Police Clearance Certificate Verification on Blockchain",
+      "slug": "police-clearance-certificate-verification-on-blockchain",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "police clearance blockchain",
+        "background check blockchain",
+        "criminal record verification"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 40,
+      "title": "How ITIs and Polytechnics Can Use Blockchain Credentials",
+      "slug": "how-itis-and-polytechnics-can-use-blockchain-credentials",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "ITI certificate blockchain",
+        "polytechnic blockchain",
+        "vocational training blockchain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 41,
+      "title": "India's National Blockchain Framework Explained",
+      "slug": "india-s-national-blockchain-framework-explained",
+      "category": "Compliance",
+      "seo_type": "AIO",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "National Blockchain Framework",
+        "NBF India",
+        "MeitY blockchain"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 42,
+      "title": "Data Localization Requirements for Blockchain in India",
+      "slug": "data-localization-requirements-for-blockchain-in-india",
+      "category": "Compliance",
+      "seo_type": "GEO",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "data localization India",
+        "DPDP Act blockchain",
+        "data sovereignty blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 43,
+      "title": "CERT-In Audit Readiness for Blockchain Platforms",
+      "slug": "cert-in-audit-readiness-for-blockchain-platforms",
+      "category": "Compliance",
+      "seo_type": "cluster",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "CERT-In audit",
+        "cybersecurity audit blockchain",
+        "CERT-In compliance"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 44,
+      "title": "How DPDP Act Affects Document Storage on Blockchain",
+      "slug": "how-dpdp-act-affects-document-storage-on-blockchain",
+      "category": "Compliance",
+      "seo_type": "GEO",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "DPDP Act 2023",
+        "data protection blockchain",
+        "personal data blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 45,
+      "title": "IT Act 2000 and Blockchain: Legal Framework",
+      "slug": "it-act-2000-and-blockchain-legal-framework",
+      "category": "Compliance",
+      "seo_type": "cluster",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "IT Act 2000 blockchain",
+        "Indian cyber law blockchain",
+        "digital signature law India"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 46,
+      "title": "Indian Evidence Act and Blockchain Records",
+      "slug": "indian-evidence-act-and-blockchain-records",
+      "category": "Compliance",
+      "seo_type": "GEO",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "Indian Evidence Act blockchain",
+        "blockchain legal evidence",
+        "digital evidence India"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 47,
+      "title": "GIGW Compliance for Blockchain Websites",
+      "slug": "gigw-compliance-for-blockchain-websites",
+      "category": "Compliance",
+      "seo_type": "cluster",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "GIGW compliance",
+        "government website guidelines",
+        "accessibility blockchain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 48,
+      "title": "Permissioned vs Public Blockchain for Government Use",
+      "slug": "permissioned-vs-public-blockchain-for-government-use",
+      "category": "Compliance",
+      "seo_type": "AIO",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "permissioned blockchain",
+        "public vs private blockchain",
+        "government blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 49,
+      "title": "How to Prepare for an NBF Compliance Audit",
+      "slug": "how-to-prepare-for-an-nbf-compliance-audit",
+      "category": "Compliance",
+      "seo_type": "product-led",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "NBF audit preparation",
+        "blockchain compliance checklist",
+        "NBF requirements"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 50,
+      "title": "Blockchain and Right to Information (RTI) Compliance",
+      "slug": "blockchain-and-right-to-information-rti-compliance",
+      "category": "Compliance",
+      "seo_type": "cluster",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "RTI blockchain",
+        "transparency blockchain",
+        "government transparency"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 51,
+      "title": "Getting Started with Setara API in 5 Minutes",
+      "slug": "getting-started-with-setara-api-in-5-minutes",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "Setara API tutorial",
+        "blockchain API quickstart",
+        "document verification API"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 52,
+      "title": "Building a Document Verification App with Node.js",
+      "slug": "building-a-document-verification-app-with-node-js",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "Node.js blockchain",
+        "document verification Node.js",
+        "blockchain API Node.js"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 53,
+      "title": "Running a Setara Validator Node: Step-by-Step",
+      "slug": "running-a-setara-validator-node-step-by-step",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "run validator node",
+        "blockchain node setup",
+        "Docker validator"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 54,
+      "title": "Integrating Setara Document Verification in Python",
+      "slug": "integrating-setara-document-verification-in-python",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "Python blockchain API",
+        "document verification Python",
+        "Setara Python SDK"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 55,
+      "title": "How to Verify Documents Using the Public API",
+      "slug": "how-to-verify-documents-using-the-public-api",
+      "category": "Tutorials",
+      "seo_type": "AIO",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "verify document API",
+        "document verification endpoint",
+        "blockchain verification API"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 56,
+      "title": "Computing SHA-256 Hashes: Linux, macOS, and Windows",
+      "slug": "computing-sha-256-hashes-linux-macos-and-windows",
+      "category": "Tutorials",
+      "seo_type": "AIO",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "SHA-256 hash command",
+        "compute file hash",
+        "sha256sum tutorial"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 57,
+      "title": "IPFS Setup Guide for Document Storage",
+      "slug": "ipfs-setup-guide-for-document-storage",
+      "category": "Tutorials",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "IPFS setup tutorial",
+        "IPFS Docker",
+        "decentralized storage setup"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 58,
+      "title": "Building a Verification Widget for Your Website",
+      "slug": "building-a-verification-widget-for-your-website",
+      "category": "Tutorials",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "verification widget",
+        "embed blockchain verification",
+        "document verify widget"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 59,
+      "title": "Bulk Document Registration via the Setara API",
+      "slug": "bulk-document-registration-via-the-setara-api",
+      "category": "Tutorials",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "bulk registration API",
+        "batch document registration",
+        "mass verification blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 60,
+      "title": "Monitoring Your Blockchain Node with Docker Logs",
+      "slug": "monitoring-your-blockchain-node-with-docker-logs",
+      "category": "Tutorials",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "Docker logs blockchain",
+        "monitor blockchain node",
+        "validator monitoring"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 61,
+      "title": "Integrating Setara with Go Applications",
+      "slug": "integrating-setara-with-go-applications",
+      "category": "Tutorials",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "Go blockchain API",
+        "Golang document verification",
+        "Setara Go SDK"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 62,
+      "title": "Building QR Code Verification with Setara",
+      "slug": "building-qr-code-verification-with-setara",
+      "category": "Tutorials",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "QR code blockchain",
+        "QR verification",
+        "blockchain QR certificate"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 63,
+      "title": "Why India Needs a Sovereign Document Blockchain",
+      "slug": "why-india-needs-a-sovereign-document-blockchain",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "sovereign blockchain India",
+        "Indian blockchain",
+        "document trust India"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 64,
+      "title": "The Future of Digital Credentials in Indian Education",
+      "slug": "the-future-of-digital-credentials-in-indian-education",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "digital credentials India",
+        "academic blockchain",
+        "future education India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 65,
+      "title": "Blockchain vs DigiLocker: Complementary or Competitive?",
+      "slug": "blockchain-vs-digilocker-complementary-or-competitive",
+      "category": "Industry",
+      "seo_type": "AIO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "DigiLocker blockchain",
+        "DigiLocker vs blockchain",
+        "digital locker India"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 66,
+      "title": "Why Zero Gas Fees Matter for Enterprise Blockchain",
+      "slug": "why-zero-gas-fees-matter-for-enterprise-blockchain",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "enterprise blockchain adoption",
+        "zero gas fees enterprise",
+        "blockchain cost efficiency"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 67,
+      "title": "From Paper to Blockchain: Digital Transformation for Government",
+      "slug": "from-paper-to-blockchain-digital-transformation-for-government",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "digital transformation government",
+        "paperless government",
+        "blockchain e-governance"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 68,
+      "title": "The True Cost of Document Fraud in India",
+      "slug": "the-true-cost-of-document-fraud-in-india",
+      "category": "Industry",
+      "seo_type": "AIO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document fraud India",
+        "fake certificate cost",
+        "fraud prevention India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 69,
+      "title": "How UGC Can Use Blockchain for Degree Verification",
+      "slug": "how-ugc-can-use-blockchain-for-degree-verification",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "UGC blockchain",
+        "UGC degree verification",
+        "university grants commission"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 70,
+      "title": "AICTE and Blockchain: Securing Technical Education",
+      "slug": "aicte-and-blockchain-securing-technical-education",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "AICTE blockchain",
+        "technical education blockchain",
+        "engineering degree verification"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 71,
+      "title": "Blockchain for Smart Cities in India",
+      "slug": "blockchain-for-smart-cities-in-india",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "smart city blockchain",
+        "urban governance blockchain",
+        "smart cities India"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 72,
+      "title": "How State Governments Can Adopt Blockchain",
+      "slug": "how-state-governments-can-adopt-blockchain",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "state government blockchain",
+        "government blockchain adoption",
+        "blockchain procurement India"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 73,
+      "title": "Setara vs DigiLocker: Blockchain vs Cloud Storage",
+      "slug": "setara-vs-digilocker-blockchain-vs-cloud-storage",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "Setara vs DigiLocker",
+        "blockchain vs DigiLocker",
+        "document verification comparison"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 74,
+      "title": "Setara vs DocuSign: Blockchain vs Digital Signatures",
+      "slug": "setara-vs-docusign-blockchain-vs-digital-signatures",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "Setara vs DocuSign",
+        "blockchain vs digital signature",
+        "document signing comparison"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 75,
+      "title": "Setara vs Ethereum: Why PoA Beats PoS for Documents",
+      "slug": "setara-vs-ethereum-why-poa-beats-pos-for-documents",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "Setara vs Ethereum",
+        "PoA vs PoS",
+        "enterprise blockchain comparison"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 76,
+      "title": "Setara vs Hyperledger Besu: Enterprise Blockchain Showdown",
+      "slug": "setara-vs-hyperledger-besu-enterprise-blockchain-showdown",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "Setara vs Hyperledger Besu",
+        "enterprise blockchain comparison",
+        "Cosmos vs Hyperledger"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 77,
+      "title": "Setara vs Polygon ID: Credential Verification Compared",
+      "slug": "setara-vs-polygon-id-credential-verification-compared",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "Setara vs Polygon ID",
+        "credential verification comparison",
+        "blockchain identity"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 78,
+      "title": "Setara vs Corda: Document Management on Blockchain",
+      "slug": "setara-vs-corda-document-management-on-blockchain",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "Setara vs Corda",
+        "R3 Corda comparison",
+        "enterprise DLT comparison"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 79,
+      "title": "Blockchain vs Traditional Certificate Authorities",
+      "slug": "blockchain-vs-traditional-certificate-authorities",
+      "category": "Comparisons",
+      "seo_type": "AIO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain vs CA",
+        "certificate authority comparison",
+        "PKI vs blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 80,
+      "title": "Blockchain vs PDF Digital Signatures for Verification",
+      "slug": "blockchain-vs-pdf-digital-signatures-for-verification",
+      "category": "Comparisons",
+      "seo_type": "AIO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain vs PDF signature",
+        "digital signature comparison",
+        "document authenticity"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 81,
+      "title": "Blockchain vs QR Codes for Certificate Verification",
+      "slug": "blockchain-vs-qr-codes-for-certificate-verification",
+      "category": "Comparisons",
+      "seo_type": "AIO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain vs QR code",
+        "QR verification comparison",
+        "certificate QR code"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 82,
+      "title": "Top 5 Blockchain Platforms for Document Verification in 2026",
+      "slug": "top-5-blockchain-platforms-for-document-verification-in-2026",
+      "category": "Comparisons",
+      "seo_type": "AIO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "best blockchain document verification",
+        "blockchain platforms comparison",
+        "document blockchain 2026"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 83,
+      "title": "What is Proof of Authority (PoA)?",
+      "slug": "what-is-proof-of-authority-poa",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "proof of authority",
+        "PoA blockchain",
+        "what is PoA"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 84,
+      "title": "What is a Blockchain Validator Node?",
+      "slug": "what-is-a-blockchain-validator-node",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "validator node",
+        "blockchain validator",
+        "what is validator"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 85,
+      "title": "What is IPFS and How Does It Store Files?",
+      "slug": "what-is-ipfs-and-how-does-it-store-files",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "IPFS explained",
+        "what is IPFS",
+        "decentralized file storage"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 86,
+      "title": "What is a Content Identifier (CID)?",
+      "slug": "what-is-a-content-identifier-cid",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "content identifier",
+        "CID IPFS",
+        "what is CID"
+      ],
+      "estimated_read_time": 4
+    },
+    {
+      "id": 87,
+      "title": "What is SHA-256 Hashing?",
+      "slug": "what-is-sha-256-hashing",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "SHA-256 explained",
+        "what is SHA-256",
+        "hashing algorithm"
+      ],
+      "estimated_read_time": 4
+    },
+    {
+      "id": 88,
+      "title": "What is an Immutable Ledger?",
+      "slug": "what-is-an-immutable-ledger",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "immutable ledger",
+        "blockchain immutability",
+        "what is immutable"
+      ],
+      "estimated_read_time": 4
+    },
+    {
+      "id": 89,
+      "title": "What is the National Blockchain Framework (NBF)?",
+      "slug": "what-is-the-national-blockchain-framework-nbf",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "NBF India",
+        "National Blockchain Framework",
+        "what is NBF"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 90,
+      "title": "What is Data Localization?",
+      "slug": "what-is-data-localization",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "data localization India",
+        "data sovereignty",
+        "what is data localization"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 91,
+      "title": "What is Cosmos SDK?",
+      "slug": "what-is-cosmos-sdk",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "Cosmos SDK explained",
+        "what is Cosmos SDK",
+        "blockchain framework"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 92,
+      "title": "What is CometBFT (Tendermint)?",
+      "slug": "what-is-cometbft-tendermint",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "CometBFT explained",
+        "Tendermint BFT",
+        "what is CometBFT"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 93,
+      "title": "Blockchain Document Verification in Mumbai",
+      "slug": "blockchain-document-verification-mumbai",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Mumbai",
+        "blockchain Mumbai",
+        "certificate verification Mumbai"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 94,
+      "title": "Blockchain Document Verification in Delhi",
+      "slug": "blockchain-document-verification-delhi",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Delhi",
+        "blockchain Delhi",
+        "certificate verification Delhi"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 95,
+      "title": "Blockchain Document Verification in Bangalore",
+      "slug": "blockchain-document-verification-bangalore",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bangalore",
+        "blockchain Bangalore",
+        "certificate verification Bangalore"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 96,
+      "title": "Blockchain Document Verification in Chennai",
+      "slug": "blockchain-document-verification-chennai",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Chennai",
+        "blockchain Chennai",
+        "certificate verification Chennai"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 97,
+      "title": "Blockchain Document Verification in Hyderabad",
+      "slug": "blockchain-document-verification-hyderabad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Hyderabad",
+        "blockchain Hyderabad",
+        "certificate verification Hyderabad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 98,
+      "title": "Blockchain Document Verification in Pune",
+      "slug": "blockchain-document-verification-pune",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Pune",
+        "blockchain Pune",
+        "certificate verification Pune"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 99,
+      "title": "Blockchain Document Verification in Kolkata",
+      "slug": "blockchain-document-verification-kolkata",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kolkata",
+        "blockchain Kolkata",
+        "certificate verification Kolkata"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 100,
+      "title": "Blockchain Document Verification in Ahmedabad",
+      "slug": "blockchain-document-verification-ahmedabad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Ahmedabad",
+        "blockchain Ahmedabad",
+        "certificate verification Ahmedabad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 101,
+      "title": "Blockchain Document Verification in Jaipur",
+      "slug": "blockchain-document-verification-jaipur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Jaipur",
+        "blockchain Jaipur",
+        "certificate verification Jaipur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 102,
+      "title": "Blockchain Document Verification in Lucknow",
+      "slug": "blockchain-document-verification-lucknow",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Lucknow",
+        "blockchain Lucknow",
+        "certificate verification Lucknow"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 103,
+      "title": "Blockchain Document Verification in Chandigarh",
+      "slug": "blockchain-document-verification-chandigarh",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Chandigarh",
+        "blockchain Chandigarh",
+        "certificate verification Chandigarh"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 104,
+      "title": "Blockchain Document Verification in Bhopal",
+      "slug": "blockchain-document-verification-bhopal",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bhopal",
+        "blockchain Bhopal",
+        "certificate verification Bhopal"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 105,
+      "title": "Blockchain Document Verification in Patna",
+      "slug": "blockchain-document-verification-patna",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Patna",
+        "blockchain Patna",
+        "certificate verification Patna"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 106,
+      "title": "Blockchain Document Verification in Thiruvananthapuram",
+      "slug": "blockchain-document-verification-thiruvananthapuram",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Thiruvananthapuram",
+        "blockchain Thiruvananthapuram",
+        "certificate verification Thiruvananthapuram"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 107,
+      "title": "Blockchain Document Verification in Bhubaneswar",
+      "slug": "blockchain-document-verification-bhubaneswar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bhubaneswar",
+        "blockchain Bhubaneswar",
+        "certificate verification Bhubaneswar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 108,
+      "title": "Blockchain Document Verification in Dehradun",
+      "slug": "blockchain-document-verification-dehradun",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Dehradun",
+        "blockchain Dehradun",
+        "certificate verification Dehradun"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 109,
+      "title": "Blockchain Document Verification in Guwahati",
+      "slug": "blockchain-document-verification-guwahati",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Guwahati",
+        "blockchain Guwahati",
+        "certificate verification Guwahati"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 110,
+      "title": "Blockchain Document Verification in Ranchi",
+      "slug": "blockchain-document-verification-ranchi",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Ranchi",
+        "blockchain Ranchi",
+        "certificate verification Ranchi"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 111,
+      "title": "Blockchain Document Verification in Raipur",
+      "slug": "blockchain-document-verification-raipur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Raipur",
+        "blockchain Raipur",
+        "certificate verification Raipur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 112,
+      "title": "Blockchain Document Verification in Gandhinagar",
+      "slug": "blockchain-document-verification-gandhinagar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Gandhinagar",
+        "blockchain Gandhinagar",
+        "certificate verification Gandhinagar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 113,
+      "title": "Blockchain Document Verification in Shimla",
+      "slug": "blockchain-document-verification-shimla",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Shimla",
+        "blockchain Shimla",
+        "certificate verification Shimla"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 114,
+      "title": "Blockchain Document Verification in Panaji",
+      "slug": "blockchain-document-verification-panaji",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Panaji",
+        "blockchain Panaji",
+        "certificate verification Panaji"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 115,
+      "title": "Blockchain Document Verification in Imphal",
+      "slug": "blockchain-document-verification-imphal",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Imphal",
+        "blockchain Imphal",
+        "certificate verification Imphal"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 116,
+      "title": "Blockchain Document Verification in Srinagar",
+      "slug": "blockchain-document-verification-srinagar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Srinagar",
+        "blockchain Srinagar",
+        "certificate verification Srinagar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 117,
+      "title": "Blockchain Document Verification in Noida",
+      "slug": "blockchain-document-verification-noida",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Noida",
+        "blockchain Noida",
+        "certificate verification Noida"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 118,
+      "title": "Blockchain Document Verification in Gurugram",
+      "slug": "blockchain-document-verification-gurugram",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Gurugram",
+        "blockchain Gurugram",
+        "certificate verification Gurugram"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 119,
+      "title": "Blockchain Document Verification in Faridabad",
+      "slug": "blockchain-document-verification-faridabad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Faridabad",
+        "blockchain Faridabad",
+        "certificate verification Faridabad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 120,
+      "title": "Blockchain Document Verification in Ghaziabad",
+      "slug": "blockchain-document-verification-ghaziabad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Ghaziabad",
+        "blockchain Ghaziabad",
+        "certificate verification Ghaziabad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 121,
+      "title": "Blockchain Document Verification in Navi Mumbai",
+      "slug": "blockchain-document-verification-navi-mumbai",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Navi Mumbai",
+        "blockchain Navi Mumbai",
+        "certificate verification Navi Mumbai"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 122,
+      "title": "Blockchain Document Verification in Thane",
+      "slug": "blockchain-document-verification-thane",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Thane",
+        "blockchain Thane",
+        "certificate verification Thane"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 123,
+      "title": "Blockchain Document Verification in Nagpur",
+      "slug": "blockchain-document-verification-nagpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Nagpur",
+        "blockchain Nagpur",
+        "certificate verification Nagpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 124,
+      "title": "Blockchain Document Verification in Indore",
+      "slug": "blockchain-document-verification-indore",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Indore",
+        "blockchain Indore",
+        "certificate verification Indore"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 125,
+      "title": "Blockchain Document Verification in Coimbatore",
+      "slug": "blockchain-document-verification-coimbatore",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Coimbatore",
+        "blockchain Coimbatore",
+        "certificate verification Coimbatore"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 126,
+      "title": "Blockchain Document Verification in Visakhapatnam",
+      "slug": "blockchain-document-verification-visakhapatnam",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Visakhapatnam",
+        "blockchain Visakhapatnam",
+        "certificate verification Visakhapatnam"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 127,
+      "title": "Blockchain Document Verification in Kochi",
+      "slug": "blockchain-document-verification-kochi",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kochi",
+        "blockchain Kochi",
+        "certificate verification Kochi"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 128,
+      "title": "Blockchain Document Verification in Mysuru",
+      "slug": "blockchain-document-verification-mysuru",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Mysuru",
+        "blockchain Mysuru",
+        "certificate verification Mysuru"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 129,
+      "title": "Blockchain Document Verification in Vadodara",
+      "slug": "blockchain-document-verification-vadodara",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Vadodara",
+        "blockchain Vadodara",
+        "certificate verification Vadodara"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 130,
+      "title": "Blockchain Document Verification in Surat",
+      "slug": "blockchain-document-verification-surat",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Surat",
+        "blockchain Surat",
+        "certificate verification Surat"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 131,
+      "title": "Blockchain Document Verification in Rajkot",
+      "slug": "blockchain-document-verification-rajkot",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Rajkot",
+        "blockchain Rajkot",
+        "certificate verification Rajkot"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 132,
+      "title": "Blockchain Document Verification in Jodhpur",
+      "slug": "blockchain-document-verification-jodhpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Jodhpur",
+        "blockchain Jodhpur",
+        "certificate verification Jodhpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 133,
+      "title": "Blockchain Document Verification in Amritsar",
+      "slug": "blockchain-document-verification-amritsar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Amritsar",
+        "blockchain Amritsar",
+        "certificate verification Amritsar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 134,
+      "title": "Blockchain Document Verification in Varanasi",
+      "slug": "blockchain-document-verification-varanasi",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Varanasi",
+        "blockchain Varanasi",
+        "certificate verification Varanasi"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 135,
+      "title": "Blockchain Document Verification in Agra",
+      "slug": "blockchain-document-verification-agra",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Agra",
+        "blockchain Agra",
+        "certificate verification Agra"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 136,
+      "title": "Blockchain Document Verification in Meerut",
+      "slug": "blockchain-document-verification-meerut",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Meerut",
+        "blockchain Meerut",
+        "certificate verification Meerut"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 137,
+      "title": "Blockchain Document Verification in Allahabad",
+      "slug": "blockchain-document-verification-allahabad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Allahabad",
+        "blockchain Allahabad",
+        "certificate verification Allahabad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 138,
+      "title": "Blockchain Document Verification in Kanpur",
+      "slug": "blockchain-document-verification-kanpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kanpur",
+        "blockchain Kanpur",
+        "certificate verification Kanpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 139,
+      "title": "Blockchain Document Verification in Nashik",
+      "slug": "blockchain-document-verification-nashik",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Nashik",
+        "blockchain Nashik",
+        "certificate verification Nashik"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 140,
+      "title": "Blockchain Document Verification in Aurangabad",
+      "slug": "blockchain-document-verification-aurangabad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Aurangabad",
+        "blockchain Aurangabad",
+        "certificate verification Aurangabad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 141,
+      "title": "Blockchain Document Verification in Solapur",
+      "slug": "blockchain-document-verification-solapur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Solapur",
+        "blockchain Solapur",
+        "certificate verification Solapur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 142,
+      "title": "Blockchain Document Verification in Mangalore",
+      "slug": "blockchain-document-verification-mangalore",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Mangalore",
+        "blockchain Mangalore",
+        "certificate verification Mangalore"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 143,
+      "title": "Blockchain Document Verification in Madurai",
+      "slug": "blockchain-document-verification-madurai",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Madurai",
+        "blockchain Madurai",
+        "certificate verification Madurai"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 144,
+      "title": "Blockchain Document Verification in Tiruchirappalli",
+      "slug": "blockchain-document-verification-tiruchirappalli",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Tiruchirappalli",
+        "blockchain Tiruchirappalli",
+        "certificate verification Tiruchirappalli"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 145,
+      "title": "Blockchain Document Verification in Salem",
+      "slug": "blockchain-document-verification-salem",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Salem",
+        "blockchain Salem",
+        "certificate verification Salem"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 146,
+      "title": "Blockchain Document Verification in Hubli",
+      "slug": "blockchain-document-verification-hubli",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Hubli",
+        "blockchain Hubli",
+        "certificate verification Hubli"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 147,
+      "title": "Blockchain Document Verification in Vijayawada",
+      "slug": "blockchain-document-verification-vijayawada",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Vijayawada",
+        "blockchain Vijayawada",
+        "certificate verification Vijayawada"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 148,
+      "title": "Blockchain Document Verification in Warangal",
+      "slug": "blockchain-document-verification-warangal",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Warangal",
+        "blockchain Warangal",
+        "certificate verification Warangal"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 149,
+      "title": "Blockchain Document Verification in Guntur",
+      "slug": "blockchain-document-verification-guntur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Guntur",
+        "blockchain Guntur",
+        "certificate verification Guntur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 150,
+      "title": "Blockchain Document Verification in Kozhikode",
+      "slug": "blockchain-document-verification-kozhikode",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kozhikode",
+        "blockchain Kozhikode",
+        "certificate verification Kozhikode"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 151,
+      "title": "Blockchain Document Verification in Thrissur",
+      "slug": "blockchain-document-verification-thrissur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Thrissur",
+        "blockchain Thrissur",
+        "certificate verification Thrissur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 152,
+      "title": "Blockchain Document Verification in Bhubaneswar",
+      "slug": "blockchain-document-verification-bhubaneswar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bhubaneswar",
+        "blockchain Bhubaneswar",
+        "certificate verification Bhubaneswar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 153,
+      "title": "Blockchain Document Verification in Cuttack",
+      "slug": "blockchain-document-verification-cuttack",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Cuttack",
+        "blockchain Cuttack",
+        "certificate verification Cuttack"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 154,
+      "title": "Blockchain Document Verification for Universities",
+      "slug": "blockchain-verification-for-universities",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain universities",
+        "document verification universities",
+        "universities blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 155,
+      "title": "Blockchain Document Verification for Schools",
+      "slug": "blockchain-verification-for-schools",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain schools",
+        "document verification schools",
+        "schools blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 156,
+      "title": "Blockchain Document Verification for Coaching Institutes",
+      "slug": "blockchain-verification-for-coaching-institutes",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain coaching institutes",
+        "document verification coaching institutes",
+        "coaching institutes blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 157,
+      "title": "Blockchain Document Verification for Iti Institutes",
+      "slug": "blockchain-verification-for-iti-institutes",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain iti institutes",
+        "document verification iti institutes",
+        "iti institutes blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 158,
+      "title": "Blockchain Document Verification for Polytechnics",
+      "slug": "blockchain-verification-for-polytechnics",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain polytechnics",
+        "document verification polytechnics",
+        "polytechnics blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 159,
+      "title": "Blockchain Document Verification for Medical Colleges",
+      "slug": "blockchain-verification-for-medical-colleges",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain medical colleges",
+        "document verification medical colleges",
+        "medical colleges blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 160,
+      "title": "Blockchain Document Verification for Engineering Colleges",
+      "slug": "blockchain-verification-for-engineering-colleges",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain engineering colleges",
+        "document verification engineering colleges",
+        "engineering colleges blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 161,
+      "title": "Blockchain Document Verification for Law Colleges",
+      "slug": "blockchain-verification-for-law-colleges",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain law colleges",
+        "document verification law colleges",
+        "law colleges blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 162,
+      "title": "Blockchain Document Verification for Management Institutes",
+      "slug": "blockchain-verification-for-management-institutes",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain management institutes",
+        "document verification management institutes",
+        "management institutes blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 163,
+      "title": "Blockchain Document Verification for Government Departments",
+      "slug": "blockchain-verification-for-government-departments",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain government departments",
+        "document verification government departments",
+        "government departments blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 164,
+      "title": "Blockchain Document Verification for Municipal Corporations",
+      "slug": "blockchain-verification-for-municipal-corporations",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain municipal corporations",
+        "document verification municipal corporations",
+        "municipal corporations blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 165,
+      "title": "Blockchain Document Verification for State Governments",
+      "slug": "blockchain-verification-for-state-governments",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain state governments",
+        "document verification state governments",
+        "state governments blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 166,
+      "title": "Blockchain Document Verification for Central Government",
+      "slug": "blockchain-verification-for-central-government",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain central government",
+        "document verification central government",
+        "central government blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 167,
+      "title": "Blockchain Document Verification for Panchayats",
+      "slug": "blockchain-verification-for-panchayats",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain panchayats",
+        "document verification panchayats",
+        "panchayats blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 168,
+      "title": "Blockchain Document Verification for District Administrations",
+      "slug": "blockchain-verification-for-district-administrations",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain district administrations",
+        "document verification district administrations",
+        "district administrations blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 169,
+      "title": "Blockchain Document Verification for Hospitals",
+      "slug": "blockchain-verification-for-hospitals",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain hospitals",
+        "document verification hospitals",
+        "hospitals blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 170,
+      "title": "Blockchain Document Verification for Pharma Companies",
+      "slug": "blockchain-verification-for-pharma-companies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain pharma companies",
+        "document verification pharma companies",
+        "pharma companies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 171,
+      "title": "Blockchain Document Verification for Diagnostic Labs",
+      "slug": "blockchain-verification-for-diagnostic-labs",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain diagnostic labs",
+        "document verification diagnostic labs",
+        "diagnostic labs blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 172,
+      "title": "Blockchain Document Verification for Clinics",
+      "slug": "blockchain-verification-for-clinics",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain clinics",
+        "document verification clinics",
+        "clinics blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 173,
+      "title": "Blockchain Document Verification for Banks",
+      "slug": "blockchain-verification-for-banks",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain banks",
+        "document verification banks",
+        "banks blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 174,
+      "title": "Blockchain Document Verification for Insurance Companies",
+      "slug": "blockchain-verification-for-insurance-companies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain insurance companies",
+        "document verification insurance companies",
+        "insurance companies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 175,
+      "title": "Blockchain Document Verification for Nbfcs",
+      "slug": "blockchain-verification-for-nbfcs",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain nbfcs",
+        "document verification nbfcs",
+        "nbfcs blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 176,
+      "title": "Blockchain Document Verification for Fintech Companies",
+      "slug": "blockchain-verification-for-fintech-companies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain fintech companies",
+        "document verification fintech companies",
+        "fintech companies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 177,
+      "title": "Blockchain Document Verification for Law Firms",
+      "slug": "blockchain-verification-for-law-firms",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain law firms",
+        "document verification law firms",
+        "law firms blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 178,
+      "title": "Blockchain Document Verification for Courts",
+      "slug": "blockchain-verification-for-courts",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain courts",
+        "document verification courts",
+        "courts blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 179,
+      "title": "Blockchain Document Verification for Notaries",
+      "slug": "blockchain-verification-for-notaries",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain notaries",
+        "document verification notaries",
+        "notaries blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 180,
+      "title": "Blockchain Document Verification for Arbitration Centers",
+      "slug": "blockchain-verification-for-arbitration-centers",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain arbitration centers",
+        "document verification arbitration centers",
+        "arbitration centers blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 181,
+      "title": "Blockchain Document Verification for Ngos",
+      "slug": "blockchain-verification-for-ngos",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain ngos",
+        "document verification ngos",
+        "ngos blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 182,
+      "title": "Blockchain Document Verification for Charities",
+      "slug": "blockchain-verification-for-charities",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain charities",
+        "document verification charities",
+        "charities blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 183,
+      "title": "Blockchain Document Verification for Trusts",
+      "slug": "blockchain-verification-for-trusts",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain trusts",
+        "document verification trusts",
+        "trusts blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 184,
+      "title": "Blockchain Document Verification for Cooperative Societies",
+      "slug": "blockchain-verification-for-cooperative-societies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain cooperative societies",
+        "document verification cooperative societies",
+        "cooperative societies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 185,
+      "title": "Blockchain Document Verification for Sports Federations",
+      "slug": "blockchain-verification-for-sports-federations",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain sports federations",
+        "document verification sports federations",
+        "sports federations blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 186,
+      "title": "Blockchain Document Verification for Sports Academies",
+      "slug": "blockchain-verification-for-sports-academies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain sports academies",
+        "document verification sports academies",
+        "sports academies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 187,
+      "title": "Blockchain Document Verification for Esports Organizations",
+      "slug": "blockchain-verification-for-esports-organizations",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain esports organizations",
+        "document verification esports organizations",
+        "esports organizations blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 188,
+      "title": "Blockchain Document Verification for It Companies",
+      "slug": "blockchain-verification-for-it-companies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain it companies",
+        "document verification it companies",
+        "it companies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 189,
+      "title": "Blockchain Document Verification for Startups",
+      "slug": "blockchain-verification-for-startups",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain startups",
+        "document verification startups",
+        "startups blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 190,
+      "title": "Blockchain Document Verification for Manufacturing Companies",
+      "slug": "blockchain-verification-for-manufacturing-companies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain manufacturing companies",
+        "document verification manufacturing companies",
+        "manufacturing companies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 191,
+      "title": "Blockchain Document Verification for Logistics Companies",
+      "slug": "blockchain-verification-for-logistics-companies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain logistics companies",
+        "document verification logistics companies",
+        "logistics companies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 192,
+      "title": "Blockchain Document Verification for Real Estate Developers",
+      "slug": "blockchain-verification-for-real-estate-developers",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain real estate developers",
+        "document verification real estate developers",
+        "real estate developers blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 193,
+      "title": "Blockchain Document Verification for Construction Companies",
+      "slug": "blockchain-verification-for-construction-companies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain construction companies",
+        "document verification construction companies",
+        "construction companies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 194,
+      "title": "Blockchain Document Verification for Architects",
+      "slug": "blockchain-verification-for-architects",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain architects",
+        "document verification architects",
+        "architects blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 195,
+      "title": "Blockchain Document Verification for Chartered Accountants",
+      "slug": "blockchain-verification-for-chartered-accountants",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain chartered accountants",
+        "document verification chartered accountants",
+        "chartered accountants blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 196,
+      "title": "Blockchain Document Verification for Company Secretaries",
+      "slug": "blockchain-verification-for-company-secretaries",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain company secretaries",
+        "document verification company secretaries",
+        "company secretaries blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 197,
+      "title": "Blockchain Document Verification for Tax Consultants",
+      "slug": "blockchain-verification-for-tax-consultants",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain tax consultants",
+        "document verification tax consultants",
+        "tax consultants blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 198,
+      "title": "Blockchain Document Verification for Recruitment Agencies",
+      "slug": "blockchain-verification-for-recruitment-agencies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain recruitment agencies",
+        "document verification recruitment agencies",
+        "recruitment agencies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 199,
+      "title": "Blockchain Document Verification for Hr Departments",
+      "slug": "blockchain-verification-for-hr-departments",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain hr departments",
+        "document verification hr departments",
+        "hr departments blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 200,
+      "title": "Blockchain Document Verification for Staffing Companies",
+      "slug": "blockchain-verification-for-staffing-companies",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain staffing companies",
+        "document verification staffing companies",
+        "staffing companies blockchain India"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 201,
+      "title": "How to Verify Degree Certificates on Blockchain",
+      "slug": "verify-degree-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify degree certificates blockchain",
+        "degree certificates verification",
+        "blockchain degree certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 202,
+      "title": "How to Verify Mark Sheets on Blockchain",
+      "slug": "verify-mark-sheets-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify mark sheets blockchain",
+        "mark sheets verification",
+        "blockchain mark sheets"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 203,
+      "title": "How to Verify Diplomas on Blockchain",
+      "slug": "verify-diplomas-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify diplomas blockchain",
+        "diplomas verification",
+        "blockchain diplomas"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 204,
+      "title": "How to Verify Transcripts on Blockchain",
+      "slug": "verify-transcripts-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify transcripts blockchain",
+        "transcripts verification",
+        "blockchain transcripts"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 205,
+      "title": "How to Verify Birth Certificates on Blockchain",
+      "slug": "verify-birth-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify birth certificates blockchain",
+        "birth certificates verification",
+        "blockchain birth certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 206,
+      "title": "How to Verify Death Certificates on Blockchain",
+      "slug": "verify-death-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify death certificates blockchain",
+        "death certificates verification",
+        "blockchain death certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 207,
+      "title": "How to Verify Marriage Certificates on Blockchain",
+      "slug": "verify-marriage-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify marriage certificates blockchain",
+        "marriage certificates verification",
+        "blockchain marriage certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 208,
+      "title": "How to Verify Land Records on Blockchain",
+      "slug": "verify-land-records-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify land records blockchain",
+        "land records verification",
+        "blockchain land records"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 209,
+      "title": "How to Verify Property Documents on Blockchain",
+      "slug": "verify-property-documents-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify property documents blockchain",
+        "property documents verification",
+        "blockchain property documents"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 210,
+      "title": "How to Verify Sale Deeds on Blockchain",
+      "slug": "verify-sale-deeds-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify sale deeds blockchain",
+        "sale deeds verification",
+        "blockchain sale deeds"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 211,
+      "title": "How to Verify Lease Agreements on Blockchain",
+      "slug": "verify-lease-agreements-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify lease agreements blockchain",
+        "lease agreements verification",
+        "blockchain lease agreements"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 212,
+      "title": "How to Verify Pan Cards on Blockchain",
+      "slug": "verify-pan-cards-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify pan cards blockchain",
+        "pan cards verification",
+        "blockchain pan cards"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 213,
+      "title": "How to Verify Aadhaar Cards on Blockchain",
+      "slug": "verify-aadhaar-cards-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify aadhaar cards blockchain",
+        "aadhaar cards verification",
+        "blockchain aadhaar cards"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 214,
+      "title": "How to Verify Voter Id on Blockchain",
+      "slug": "verify-voter-id-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify voter id blockchain",
+        "voter id verification",
+        "blockchain voter id"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 215,
+      "title": "How to Verify Driving Licenses on Blockchain",
+      "slug": "verify-driving-licenses-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify driving licenses blockchain",
+        "driving licenses verification",
+        "blockchain driving licenses"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 216,
+      "title": "How to Verify Gst Certificates on Blockchain",
+      "slug": "verify-gst-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify gst certificates blockchain",
+        "gst certificates verification",
+        "blockchain gst certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 217,
+      "title": "How to Verify Tax Returns on Blockchain",
+      "slug": "verify-tax-returns-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify tax returns blockchain",
+        "tax returns verification",
+        "blockchain tax returns"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 218,
+      "title": "How to Verify Tds Certificates on Blockchain",
+      "slug": "verify-tds-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify tds certificates blockchain",
+        "tds certificates verification",
+        "blockchain tds certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 219,
+      "title": "How to Verify Experience Letters on Blockchain",
+      "slug": "verify-experience-letters-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify experience letters blockchain",
+        "experience letters verification",
+        "blockchain experience letters"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 220,
+      "title": "How to Verify Appointment Letters on Blockchain",
+      "slug": "verify-appointment-letters-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify appointment letters blockchain",
+        "appointment letters verification",
+        "blockchain appointment letters"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 221,
+      "title": "How to Verify Relieving Letters on Blockchain",
+      "slug": "verify-relieving-letters-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify relieving letters blockchain",
+        "relieving letters verification",
+        "blockchain relieving letters"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 222,
+      "title": "How to Verify Bonafide Certificates on Blockchain",
+      "slug": "verify-bonafide-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify bonafide certificates blockchain",
+        "bonafide certificates verification",
+        "blockchain bonafide certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 223,
+      "title": "How to Verify Migration Certificates on Blockchain",
+      "slug": "verify-migration-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify migration certificates blockchain",
+        "migration certificates verification",
+        "blockchain migration certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 224,
+      "title": "How to Verify Transfer Certificates on Blockchain",
+      "slug": "verify-transfer-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify transfer certificates blockchain",
+        "transfer certificates verification",
+        "blockchain transfer certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 225,
+      "title": "How to Verify Character Certificates on Blockchain",
+      "slug": "verify-character-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify character certificates blockchain",
+        "character certificates verification",
+        "blockchain character certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 226,
+      "title": "How to Verify Medical Certificates on Blockchain",
+      "slug": "verify-medical-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify medical certificates blockchain",
+        "medical certificates verification",
+        "blockchain medical certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 227,
+      "title": "How to Verify Fitness Certificates on Blockchain",
+      "slug": "verify-fitness-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify fitness certificates blockchain",
+        "fitness certificates verification",
+        "blockchain fitness certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 228,
+      "title": "How to Verify Insurance Policies on Blockchain",
+      "slug": "verify-insurance-policies-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify insurance policies blockchain",
+        "insurance policies verification",
+        "blockchain insurance policies"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 229,
+      "title": "How to Verify Claim Documents on Blockchain",
+      "slug": "verify-claim-documents-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify claim documents blockchain",
+        "claim documents verification",
+        "blockchain claim documents"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 230,
+      "title": "How to Verify Warranty Certificates on Blockchain",
+      "slug": "verify-warranty-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify warranty certificates blockchain",
+        "warranty certificates verification",
+        "blockchain warranty certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 231,
+      "title": "How to Verify Noc Certificates on Blockchain",
+      "slug": "verify-noc-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify noc certificates blockchain",
+        "noc certificates verification",
+        "blockchain noc certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 232,
+      "title": "How to Verify Police Clearance on Blockchain",
+      "slug": "verify-police-clearance-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify police clearance blockchain",
+        "police clearance verification",
+        "blockchain police clearance"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 233,
+      "title": "How to Verify Passport Copies on Blockchain",
+      "slug": "verify-passport-copies-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify passport copies blockchain",
+        "passport copies verification",
+        "blockchain passport copies"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 234,
+      "title": "How to Verify Import Export Licenses on Blockchain",
+      "slug": "verify-import-export-licenses-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify import export licenses blockchain",
+        "import export licenses verification",
+        "blockchain import export licenses"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 235,
+      "title": "How to Verify Fssai Licenses on Blockchain",
+      "slug": "verify-fssai-licenses-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify fssai licenses blockchain",
+        "fssai licenses verification",
+        "blockchain fssai licenses"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 236,
+      "title": "How to Verify Drug Licenses on Blockchain",
+      "slug": "verify-drug-licenses-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify drug licenses blockchain",
+        "drug licenses verification",
+        "blockchain drug licenses"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 237,
+      "title": "How to Verify Company Registration on Blockchain",
+      "slug": "verify-company-registration-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify company registration blockchain",
+        "company registration verification",
+        "blockchain company registration"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 238,
+      "title": "How to Verify Incorporation Certificates on Blockchain",
+      "slug": "verify-incorporation-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify incorporation certificates blockchain",
+        "incorporation certificates verification",
+        "blockchain incorporation certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 239,
+      "title": "How to Verify Moa Aoa on Blockchain",
+      "slug": "verify-moa-aoa-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify moa aoa blockchain",
+        "moa aoa verification",
+        "blockchain moa aoa"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 240,
+      "title": "How to Verify Board Resolutions on Blockchain",
+      "slug": "verify-board-resolutions-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify board resolutions blockchain",
+        "board resolutions verification",
+        "blockchain board resolutions"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 241,
+      "title": "How to Verify Shareholder Agreements on Blockchain",
+      "slug": "verify-shareholder-agreements-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify shareholder agreements blockchain",
+        "shareholder agreements verification",
+        "blockchain shareholder agreements"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 242,
+      "title": "How to Verify Compliance Certificates on Blockchain",
+      "slug": "verify-compliance-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify compliance certificates blockchain",
+        "compliance certificates verification",
+        "blockchain compliance certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 243,
+      "title": "How to Verify Iso Certificates on Blockchain",
+      "slug": "verify-iso-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify iso certificates blockchain",
+        "iso certificates verification",
+        "blockchain iso certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 244,
+      "title": "How to Verify Quality Certificates on Blockchain",
+      "slug": "verify-quality-certificates-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify quality certificates blockchain",
+        "quality certificates verification",
+        "blockchain quality certificates"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 245,
+      "title": "How to Verify Lab Test Reports on Blockchain",
+      "slug": "verify-lab-test-reports-blockchain",
+      "category": "Use Cases",
+      "seo_type": "pSEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "verify lab test reports blockchain",
+        "lab test reports verification",
+        "blockchain lab test reports"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 246,
+      "title": "How Blockchain Can Reduce Verification Time from Weeks to Seconds",
+      "slug": "how-blockchain-can-reduce-verification-time-from-weeks-to-seconds",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "fast verification blockchain",
+        "instant document verification",
+        "reduce verification time"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 247,
+      "title": "The Environmental Impact of Zero Gas Fee Blockchains",
+      "slug": "the-environmental-impact-of-zero-gas-fee-blockchains",
+      "category": "Technology",
+      "seo_type": "GEO",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "green blockchain",
+        "eco-friendly blockchain",
+        "zero gas environmental"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 248,
+      "title": "How to Integrate Blockchain Verification into ERP Systems",
+      "slug": "how-to-integrate-blockchain-verification-into-erp-systems",
+      "category": "Tutorials",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "ERP blockchain integration",
+        "SAP blockchain",
+        "enterprise blockchain integration"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 249,
+      "title": "Blockchain for Academic Credential Verification Across Borders",
+      "slug": "blockchain-for-academic-credential-verification-across-borders",
+      "category": "Use Cases",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "cross-border credential verification",
+        "international degree verification",
+        "WES blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 250,
+      "title": "How Small Businesses Can Afford Blockchain Document Management",
+      "slug": "how-small-businesses-can-afford-blockchain-document-management",
+      "category": "Industry",
+      "seo_type": "product-led",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "SME blockchain",
+        "affordable blockchain",
+        "small business document verification"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 251,
+      "title": "AI + Blockchain: The Future of Automated Document Verification",
+      "slug": "ai-blockchain-the-future-of-automated-document-verification",
+      "category": "Technology",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "AI blockchain verification",
+        "automated document check",
+        "AI document verification"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 252,
+      "title": "How to Build Trust in Digital Certificates",
+      "slug": "how-to-build-trust-in-digital-certificates",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "digital certificate trust",
+        "trusted credentials",
+        "certificate authenticity"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 253,
+      "title": "Blockchain KYC: Verifying Customer Documents at Scale",
+      "slug": "blockchain-kyc-verifying-customer-documents-at-scale",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain KYC",
+        "KYC automation",
+        "customer verification blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 254,
+      "title": "Open Source Blockchain for Government: Why It Matters",
+      "slug": "open-source-blockchain-for-government-why-it-matters",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "open source blockchain government",
+        "transparent blockchain",
+        "government open source"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 255,
+      "title": "How to Create an Immutable Audit Trail for Your Organization",
+      "slug": "how-to-create-an-immutable-audit-trail-for-your-organization",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "audit trail blockchain",
+        "immutable audit",
+        "compliance audit blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 256,
+      "title": "Best Practices for Blockchain Document Registration",
+      "slug": "best-practices-for-blockchain-document-registration",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "practices",
+        "blockchain",
+        "document"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 257,
+      "title": "How Blockchain Prevents Backdating of Documents",
+      "slug": "how-blockchain-prevents-backdating-of-documents",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "blockchain",
+        "prevents",
+        "backdating"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 258,
+      "title": "Understanding Blockchain Finality for Document Verification",
+      "slug": "understanding-blockchain-finality-for-document-verification",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "understanding",
+        "blockchain",
+        "finality"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 259,
+      "title": "How to Set Up IPFS Pinning for Permanent Document Storage",
+      "slug": "how-to-set-up-ipfs-pinning-for-permanent-document-storage",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "pinning",
+        "permanent",
+        "document"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 260,
+      "title": "Blockchain vs Notarization: Modern Document Authentication",
+      "slug": "blockchain-vs-notarization-modern-document-authentication",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "blockchain",
+        "notarization:",
+        "modern"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 261,
+      "title": "How to Migrate from Paper Records to Blockchain",
+      "slug": "how-to-migrate-from-paper-records-to-blockchain",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "migrate",
+        "paper",
+        "records"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 262,
+      "title": "Blockchain for HR: Verifying Employee Credentials",
+      "slug": "blockchain-for-hr-verifying-employee-credentials",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "blockchain",
+        "verifying",
+        "employee"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 263,
+      "title": "How Real Estate Can Use Blockchain for Title Verification",
+      "slug": "how-real-estate-can-use-blockchain-for-title-verification",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "estate",
+        "blockchain",
+        "title"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 264,
+      "title": "The Role of Blockchain in India's Digital India Initiative",
+      "slug": "the-role-of-blockchain-in-india-s-digital-india-initiative",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain",
+        "india's",
+        "digital"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 265,
+      "title": "How to Use Blockchain Verification in Court Proceedings",
+      "slug": "how-to-use-blockchain-verification-in-court-proceedings",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "blockchain",
+        "verification",
+        "court"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 266,
+      "title": "Blockchain for Export Documentation and Trade Finance",
+      "slug": "blockchain-for-export-documentation-and-trade-finance",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain",
+        "export",
+        "documentation"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 267,
+      "title": "How to Audit a Blockchain-Based Document System",
+      "slug": "how-to-audit-a-blockchain-based-document-system",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "audit",
+        "blockchain-based",
+        "document"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 268,
+      "title": "Understanding Gas Fees: Why Most Blockchains Charge Them",
+      "slug": "understanding-gas-fees-why-most-blockchains-charge-them",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "understanding",
+        "fees:",
+        "blockchains"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 269,
+      "title": "How Setara's Credit System Works: A Complete Guide",
+      "slug": "how-setara-s-credit-system-works-a-complete-guide",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "setara's",
+        "credit",
+        "system"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 270,
+      "title": "Blockchain for Pharmaceutical Drug Authentication",
+      "slug": "blockchain-for-pharmaceutical-drug-authentication",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "blockchain",
+        "pharmaceutical",
+        "authentication"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 271,
+      "title": "How to Build a Certificate Issuance System on Blockchain",
+      "slug": "how-to-build-a-certificate-issuance-system-on-blockchain",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "build",
+        "certificate",
+        "issuance"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 272,
+      "title": "The History of Document Verification: From Seals to Blockchain",
+      "slug": "the-history-of-document-verification-from-seals-to-blockchain",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "history",
+        "document",
+        "verification:"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 273,
+      "title": "How Blockchain Handles Document Versioning",
+      "slug": "how-blockchain-handles-document-versioning",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "handles",
+        "document"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 274,
+      "title": "Blockchain for Research Paper Authentication",
+      "slug": "blockchain-for-research-paper-authentication",
+      "category": "Use Cases",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain",
+        "research",
+        "paper"
+      ],
+      "estimated_read_time": 9
+    },
+    {
+      "id": 275,
+      "title": "How to Implement Document Verification in a Mobile App",
+      "slug": "how-to-implement-document-verification-in-a-mobile-app",
+      "category": "Industry",
+      "seo_type": "cluster",
+      "pillar": "pillar-2",
+      "target_keywords": [
+        "implement",
+        "document",
+        "verification"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 276,
+      "title": "Blockchain Document Verification in Bhopal",
+      "slug": "blockchain-document-verification-bhopal",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bhopal",
+        "blockchain Bhopal",
+        "certificate verification Bhopal"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 277,
+      "title": "Blockchain Document Verification in Ranchi",
+      "slug": "blockchain-document-verification-ranchi",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Ranchi",
+        "blockchain Ranchi",
+        "certificate verification Ranchi"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 278,
+      "title": "Blockchain Document Verification in Raipur",
+      "slug": "blockchain-document-verification-raipur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Raipur",
+        "blockchain Raipur",
+        "certificate verification Raipur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 279,
+      "title": "Blockchain Document Verification in Shimla",
+      "slug": "blockchain-document-verification-shimla",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Shimla",
+        "blockchain Shimla",
+        "certificate verification Shimla"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 280,
+      "title": "Blockchain Document Verification in Gangtok",
+      "slug": "blockchain-document-verification-gangtok",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Gangtok",
+        "blockchain Gangtok",
+        "certificate verification Gangtok"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 281,
+      "title": "Blockchain Document Verification in Aizawl",
+      "slug": "blockchain-document-verification-aizawl",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Aizawl",
+        "blockchain Aizawl",
+        "certificate verification Aizawl"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 282,
+      "title": "Blockchain Document Verification in Kohima",
+      "slug": "blockchain-document-verification-kohima",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kohima",
+        "blockchain Kohima",
+        "certificate verification Kohima"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 283,
+      "title": "Blockchain Document Verification in Itanagar",
+      "slug": "blockchain-document-verification-itanagar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Itanagar",
+        "blockchain Itanagar",
+        "certificate verification Itanagar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 284,
+      "title": "Blockchain Document Verification in Shillong",
+      "slug": "blockchain-document-verification-shillong",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Shillong",
+        "blockchain Shillong",
+        "certificate verification Shillong"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 285,
+      "title": "Blockchain Document Verification in Agartala",
+      "slug": "blockchain-document-verification-agartala",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Agartala",
+        "blockchain Agartala",
+        "certificate verification Agartala"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 286,
+      "title": "Blockchain Document Verification in Daman",
+      "slug": "blockchain-document-verification-daman",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Daman",
+        "blockchain Daman",
+        "certificate verification Daman"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 287,
+      "title": "Blockchain Document Verification in Silvassa",
+      "slug": "blockchain-document-verification-silvassa",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Silvassa",
+        "blockchain Silvassa",
+        "certificate verification Silvassa"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 288,
+      "title": "Blockchain Document Verification in Kavaratti",
+      "slug": "blockchain-document-verification-kavaratti",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kavaratti",
+        "blockchain Kavaratti",
+        "certificate verification Kavaratti"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 289,
+      "title": "Blockchain Document Verification in Puducherry",
+      "slug": "blockchain-document-verification-puducherry",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Puducherry",
+        "blockchain Puducherry",
+        "certificate verification Puducherry"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 290,
+      "title": "Blockchain Document Verification in Jammu",
+      "slug": "blockchain-document-verification-jammu",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Jammu",
+        "blockchain Jammu",
+        "certificate verification Jammu"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 291,
+      "title": "Blockchain Document Verification in Leh",
+      "slug": "blockchain-document-verification-leh",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Leh",
+        "blockchain Leh",
+        "certificate verification Leh"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 292,
+      "title": "Blockchain Document Verification in Kota",
+      "slug": "blockchain-document-verification-kota",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kota",
+        "blockchain Kota",
+        "certificate verification Kota"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 293,
+      "title": "Blockchain Document Verification in Udaipur",
+      "slug": "blockchain-document-verification-udaipur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Udaipur",
+        "blockchain Udaipur",
+        "certificate verification Udaipur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 294,
+      "title": "Blockchain Document Verification in Bikaner",
+      "slug": "blockchain-document-verification-bikaner",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bikaner",
+        "blockchain Bikaner",
+        "certificate verification Bikaner"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 295,
+      "title": "Blockchain Document Verification in Jamnagar",
+      "slug": "blockchain-document-verification-jamnagar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Jamnagar",
+        "blockchain Jamnagar",
+        "certificate verification Jamnagar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 296,
+      "title": "Blockchain Document Verification in Bhavnagar",
+      "slug": "blockchain-document-verification-bhavnagar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bhavnagar",
+        "blockchain Bhavnagar",
+        "certificate verification Bhavnagar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 297,
+      "title": "Blockchain Document Verification in Dhanbad",
+      "slug": "blockchain-document-verification-dhanbad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Dhanbad",
+        "blockchain Dhanbad",
+        "certificate verification Dhanbad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 298,
+      "title": "Blockchain Document Verification in Bokaro",
+      "slug": "blockchain-document-verification-bokaro",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bokaro",
+        "blockchain Bokaro",
+        "certificate verification Bokaro"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 299,
+      "title": "Blockchain Document Verification in Jamshedpur",
+      "slug": "blockchain-document-verification-jamshedpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Jamshedpur",
+        "blockchain Jamshedpur",
+        "certificate verification Jamshedpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 300,
+      "title": "Blockchain Document Verification in Rourkela",
+      "slug": "blockchain-document-verification-rourkela",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Rourkela",
+        "blockchain Rourkela",
+        "certificate verification Rourkela"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 301,
+      "title": "Blockchain Document Verification in Sambalpur",
+      "slug": "blockchain-document-verification-sambalpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Sambalpur",
+        "blockchain Sambalpur",
+        "certificate verification Sambalpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 302,
+      "title": "Blockchain Document Verification in Bilaspur",
+      "slug": "blockchain-document-verification-bilaspur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bilaspur",
+        "blockchain Bilaspur",
+        "certificate verification Bilaspur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 303,
+      "title": "Blockchain Document Verification in Durg",
+      "slug": "blockchain-document-verification-durg",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Durg",
+        "blockchain Durg",
+        "certificate verification Durg"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 304,
+      "title": "Blockchain Document Verification in Korba",
+      "slug": "blockchain-document-verification-korba",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Korba",
+        "blockchain Korba",
+        "certificate verification Korba"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 305,
+      "title": "Blockchain Document Verification in Siliguri",
+      "slug": "blockchain-document-verification-siliguri",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Siliguri",
+        "blockchain Siliguri",
+        "certificate verification Siliguri"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 306,
+      "title": "Blockchain Document Verification in Durgapur",
+      "slug": "blockchain-document-verification-durgapur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Durgapur",
+        "blockchain Durgapur",
+        "certificate verification Durgapur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 307,
+      "title": "Blockchain Document Verification in Asansol",
+      "slug": "blockchain-document-verification-asansol",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Asansol",
+        "blockchain Asansol",
+        "certificate verification Asansol"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 308,
+      "title": "Blockchain Document Verification in Kolhapur",
+      "slug": "blockchain-document-verification-kolhapur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kolhapur",
+        "blockchain Kolhapur",
+        "certificate verification Kolhapur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 309,
+      "title": "Blockchain Document Verification in Sangli",
+      "slug": "blockchain-document-verification-sangli",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Sangli",
+        "blockchain Sangli",
+        "certificate verification Sangli"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 310,
+      "title": "Blockchain Document Verification in Latur",
+      "slug": "blockchain-document-verification-latur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Latur",
+        "blockchain Latur",
+        "certificate verification Latur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 311,
+      "title": "Blockchain Document Verification in Nanded",
+      "slug": "blockchain-document-verification-nanded",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Nanded",
+        "blockchain Nanded",
+        "certificate verification Nanded"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 312,
+      "title": "Blockchain Document Verification in Akola",
+      "slug": "blockchain-document-verification-akola",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Akola",
+        "blockchain Akola",
+        "certificate verification Akola"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 313,
+      "title": "Blockchain Document Verification in Amravati",
+      "slug": "blockchain-document-verification-amravati",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Amravati",
+        "blockchain Amravati",
+        "certificate verification Amravati"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 314,
+      "title": "Blockchain Document Verification in Chandrapur",
+      "slug": "blockchain-document-verification-chandrapur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Chandrapur",
+        "blockchain Chandrapur",
+        "certificate verification Chandrapur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 315,
+      "title": "Blockchain Document Verification in Jalgaon",
+      "slug": "blockchain-document-verification-jalgaon",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Jalgaon",
+        "blockchain Jalgaon",
+        "certificate verification Jalgaon"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 316,
+      "title": "Blockchain Document Verification in Bhiwandi",
+      "slug": "blockchain-document-verification-bhiwandi",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bhiwandi",
+        "blockchain Bhiwandi",
+        "certificate verification Bhiwandi"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 317,
+      "title": "Blockchain Document Verification in Panvel",
+      "slug": "blockchain-document-verification-panvel",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Panvel",
+        "blockchain Panvel",
+        "certificate verification Panvel"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 318,
+      "title": "Blockchain Document Verification in Vasai-Virar",
+      "slug": "blockchain-document-verification-vasai-virar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Vasai-Virar",
+        "blockchain Vasai-Virar",
+        "certificate verification Vasai-Virar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 319,
+      "title": "Blockchain Document Verification in Kalyan",
+      "slug": "blockchain-document-verification-kalyan",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Kalyan",
+        "blockchain Kalyan",
+        "certificate verification Kalyan"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 320,
+      "title": "Blockchain Document Verification in Mira-Bhayandar",
+      "slug": "blockchain-document-verification-mira-bhayandar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Mira-Bhayandar",
+        "blockchain Mira-Bhayandar",
+        "certificate verification Mira-Bhayandar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 321,
+      "title": "Blockchain Document Verification in Ulhasnagar",
+      "slug": "blockchain-document-verification-ulhasnagar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Ulhasnagar",
+        "blockchain Ulhasnagar",
+        "certificate verification Ulhasnagar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 322,
+      "title": "Blockchain Document Verification in Pimpri-Chinchwad",
+      "slug": "blockchain-document-verification-pimpri-chinchwad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Pimpri-Chinchwad",
+        "blockchain Pimpri-Chinchwad",
+        "certificate verification Pimpri-Chinchwad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 323,
+      "title": "Blockchain Document Verification in Bhilai",
+      "slug": "blockchain-document-verification-bhilai",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bhilai",
+        "blockchain Bhilai",
+        "certificate verification Bhilai"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 324,
+      "title": "Blockchain Document Verification in Jabalpur",
+      "slug": "blockchain-document-verification-jabalpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Jabalpur",
+        "blockchain Jabalpur",
+        "certificate verification Jabalpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 325,
+      "title": "Blockchain Document Verification in Gwalior",
+      "slug": "blockchain-document-verification-gwalior",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Gwalior",
+        "blockchain Gwalior",
+        "certificate verification Gwalior"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 326,
+      "title": "Blockchain Document Verification in Ujjain",
+      "slug": "blockchain-document-verification-ujjain",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Ujjain",
+        "blockchain Ujjain",
+        "certificate verification Ujjain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 327,
+      "title": "Blockchain Document Verification in Sagar",
+      "slug": "blockchain-document-verification-sagar",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Sagar",
+        "blockchain Sagar",
+        "certificate verification Sagar"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 328,
+      "title": "Blockchain Document Verification in Rewa",
+      "slug": "blockchain-document-verification-rewa",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Rewa",
+        "blockchain Rewa",
+        "certificate verification Rewa"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 329,
+      "title": "Blockchain Document Verification in Satna",
+      "slug": "blockchain-document-verification-satna",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Satna",
+        "blockchain Satna",
+        "certificate verification Satna"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 330,
+      "title": "Blockchain Document Verification in Bareilly",
+      "slug": "blockchain-document-verification-bareilly",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Bareilly",
+        "blockchain Bareilly",
+        "certificate verification Bareilly"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 331,
+      "title": "Blockchain Document Verification in Aligarh",
+      "slug": "blockchain-document-verification-aligarh",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Aligarh",
+        "blockchain Aligarh",
+        "certificate verification Aligarh"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 332,
+      "title": "Blockchain Document Verification in Moradabad",
+      "slug": "blockchain-document-verification-moradabad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Moradabad",
+        "blockchain Moradabad",
+        "certificate verification Moradabad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 333,
+      "title": "Blockchain Document Verification in Saharanpur",
+      "slug": "blockchain-document-verification-saharanpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Saharanpur",
+        "blockchain Saharanpur",
+        "certificate verification Saharanpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 334,
+      "title": "Blockchain Document Verification in Gorakhpur",
+      "slug": "blockchain-document-verification-gorakhpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Gorakhpur",
+        "blockchain Gorakhpur",
+        "certificate verification Gorakhpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 335,
+      "title": "Blockchain Document Verification in Mathura",
+      "slug": "blockchain-document-verification-mathura",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Mathura",
+        "blockchain Mathura",
+        "certificate verification Mathura"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 336,
+      "title": "Blockchain Document Verification in Firozabad",
+      "slug": "blockchain-document-verification-firozabad",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Firozabad",
+        "blockchain Firozabad",
+        "certificate verification Firozabad"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 337,
+      "title": "Blockchain Document Verification in Shahjahanpur",
+      "slug": "blockchain-document-verification-shahjahanpur",
+      "category": "Industry",
+      "seo_type": "pSEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document verification Shahjahanpur",
+        "blockchain Shahjahanpur",
+        "certificate verification Shahjahanpur"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 338,
+      "title": "How to Verify a Document Hash Online",
+      "slug": "how-to-verify-a-document-hash-online",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "verify",
+        "document",
+        "online"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 339,
+      "title": "How to Set Up Blockchain for Your University",
+      "slug": "how-to-set-up-blockchain-for-your-university",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "blockchain",
+        "university"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 340,
+      "title": "How to Register Your Organization on Setara",
+      "slug": "how-to-register-your-organization-on-setara",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "register",
+        "organization",
+        "setara"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 341,
+      "title": "How to Check Your Credit Balance via API",
+      "slug": "how-to-check-your-credit-balance-via-api",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "check",
+        "credit",
+        "balance"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 342,
+      "title": "How to Upload Documents to IPFS",
+      "slug": "how-to-upload-documents-to-ipfs",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "upload",
+        "documents"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 343,
+      "title": "How to Build a Verification Portal with React",
+      "slug": "how-to-build-a-verification-portal-with-react",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "build",
+        "verification",
+        "portal"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 344,
+      "title": "How to Connect IPFS to Your Blockchain Node",
+      "slug": "how-to-connect-ipfs-to-your-blockchain-node",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "connect",
+        "blockchain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 345,
+      "title": "How to Migrate from Paper Records to Blockchain",
+      "slug": "how-to-migrate-from-paper-records-to-blockchain",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "migrate",
+        "paper",
+        "records"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 346,
+      "title": "How to Generate QR Codes for Verified Documents",
+      "slug": "how-to-generate-qr-codes-for-verified-documents",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "generate",
+        "codes",
+        "verified"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 347,
+      "title": "How to Set Up Webhooks for Document Events",
+      "slug": "how-to-set-up-webhooks-for-document-events",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "webhooks",
+        "document",
+        "events"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 348,
+      "title": "How to Use Setara API with Postman",
+      "slug": "how-to-use-setara-api-with-postman",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "setara",
+        "postman"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 349,
+      "title": "How to Build a Mobile Verification App",
+      "slug": "how-to-build-a-mobile-verification-app",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "build",
+        "mobile",
+        "verification"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 350,
+      "title": "How to Monitor Your Validator Node Health",
+      "slug": "how-to-monitor-your-validator-node-health",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "monitor",
+        "validator",
+        "health"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 351,
+      "title": "How to Back Up Your Blockchain Data",
+      "slug": "how-to-back-up-your-blockchain-data",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "blockchain"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 352,
+      "title": "How to Implement Role-Based Access for Documents",
+      "slug": "how-to-implement-role-based-access-for-documents",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "implement",
+        "role-based",
+        "access"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 353,
+      "title": "How to Create Custom Document Types in Setara",
+      "slug": "how-to-create-custom-document-types-in-setara",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "create",
+        "custom",
+        "document"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 354,
+      "title": "How to Set Up Email Notifications for Registrations",
+      "slug": "how-to-set-up-email-notifications-for-registrations",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "email",
+        "notifications",
+        "registrations"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 355,
+      "title": "How to Build a Dashboard for Document Statistics",
+      "slug": "how-to-build-a-dashboard-for-document-statistics",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "build",
+        "dashboard",
+        "document"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 356,
+      "title": "How to Integrate Setara with Google Sheets",
+      "slug": "how-to-integrate-setara-with-google-sheets",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "integrate",
+        "setara",
+        "google"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 357,
+      "title": "How to Verify Documents in Bulk via CSV Upload",
+      "slug": "how-to-verify-documents-in-bulk-via-csv-upload",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "verify",
+        "documents",
+        "upload"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 358,
+      "title": "How to Generate Monthly Verification Reports",
+      "slug": "how-to-generate-monthly-verification-reports",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "generate",
+        "monthly",
+        "verification"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 359,
+      "title": "How to Set Up Multi-Org Document Sharing",
+      "slug": "how-to-set-up-multi-org-document-sharing",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "multi-org",
+        "document",
+        "sharing"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 360,
+      "title": "How to Implement Document Expiry Tracking",
+      "slug": "how-to-implement-document-expiry-tracking",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "implement",
+        "document",
+        "expiry"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 361,
+      "title": "How to Build a White-Label Verification Portal",
+      "slug": "how-to-build-a-white-label-verification-portal",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "build",
+        "white-label",
+        "verification"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 362,
+      "title": "How to Use the Setara Explorer to Audit Records",
+      "slug": "how-to-use-the-setara-explorer-to-audit-records",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "setara",
+        "explorer",
+        "audit"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 363,
+      "title": "How to Set Up Continuous Document Monitoring",
+      "slug": "how-to-set-up-continuous-document-monitoring",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "continuous",
+        "document",
+        "monitoring"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 364,
+      "title": "How to Create an API Key Rotation Policy",
+      "slug": "how-to-create-an-api-key-rotation-policy",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "create",
+        "rotation",
+        "policy"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 365,
+      "title": "How to Handle API Rate Limits Gracefully",
+      "slug": "how-to-handle-api-rate-limits-gracefully",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "handle",
+        "limits",
+        "gracefully"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 366,
+      "title": "How to Implement Retry Logic for Blockchain Transactions",
+      "slug": "how-to-implement-retry-logic-for-blockchain-transactions",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "implement",
+        "retry",
+        "logic"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 367,
+      "title": "How to Test Document Registration on Testnet",
+      "slug": "how-to-test-document-registration-on-testnet",
+      "category": "Tutorials",
+      "seo_type": "product-led",
+      "pillar": "pillar-4",
+      "target_keywords": [
+        "document",
+        "registration",
+        "testnet"
+      ],
+      "estimated_read_time": 6
+    },
+    {
+      "id": 368,
+      "title": "Why Document Fraud Is India Second Largest White-Collar Crime",
+      "slug": "why-document-fraud-is-india-second-largest-white-collar-crime",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "document",
+        "fraud",
+        "india"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 369,
+      "title": "The Rs 5000 Crore Fake Certificate Industry in India",
+      "slug": "the-rs-5000-crore-fake-certificate-industry-in-india",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "crore",
+        "certificate",
+        "industry"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 370,
+      "title": "How Blockchain Could Save Indian Universities Millions in Verification Costs",
+      "slug": "how-blockchain-could-save-indian-universities-millions-in-verification-costs",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "could",
+        "indian"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 371,
+      "title": "Why Every Indian Government Office Should Use Blockchain",
+      "slug": "why-every-indian-government-office-should-use-blockchain",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "every",
+        "indian",
+        "government"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 372,
+      "title": "The Future of Aadhaar-Linked Document Verification",
+      "slug": "the-future-of-aadhaar-linked-document-verification",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "future",
+        "aadhaar-linked",
+        "document"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 373,
+      "title": "How NEP 2020 Creates Demand for Blockchain Credentials",
+      "slug": "how-nep-2020-creates-demand-for-blockchain-credentials",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "creates",
+        "demand",
+        "blockchain"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 374,
+      "title": "Why Indian Startups Should Build on Blockchain Infrastructure",
+      "slug": "why-indian-startups-should-build-on-blockchain-infrastructure",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "indian",
+        "startups",
+        "should"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 375,
+      "title": "The Case for Open Source Blockchain in Government",
+      "slug": "the-case-for-open-source-blockchain-in-government",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "source",
+        "blockchain",
+        "government"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 376,
+      "title": "How Blockchain Can Fix India Broken Document Ecosystem",
+      "slug": "how-blockchain-can-fix-india-broken-document-ecosystem",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "india",
+        "broken"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 377,
+      "title": "Why Fiat Billing Matters More Than Tokens for Enterprise Blockchain",
+      "slug": "why-fiat-billing-matters-more-than-tokens-for-enterprise-blockchain",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "billing",
+        "matters",
+        "tokens"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 378,
+      "title": "The Next 10 Years of Document Verification in India",
+      "slug": "the-next-10-years-of-document-verification-in-india",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "years",
+        "document",
+        "verification"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 379,
+      "title": "How AI and Blockchain Together Can Eliminate Fraud",
+      "slug": "how-ai-and-blockchain-together-can-eliminate-fraud",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "together",
+        "eliminate"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 380,
+      "title": "Why India Leads the World in Blockchain Adoption Potential",
+      "slug": "why-india-leads-the-world-in-blockchain-adoption-potential",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "india",
+        "leads",
+        "world"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 381,
+      "title": "The Role of Blockchain in Atmanirbhar Bharat",
+      "slug": "the-role-of-blockchain-in-atmanirbhar-bharat",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "atmanirbhar",
+        "bharat"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 382,
+      "title": "How Blockchain Can Support Make in India Compliance",
+      "slug": "how-blockchain-can-support-make-in-india-compliance",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "support",
+        "india"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 383,
+      "title": "Why Every Hospital Should Use Blockchain for Medical Records",
+      "slug": "why-every-hospital-should-use-blockchain-for-medical-records",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "every",
+        "hospital",
+        "should"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 384,
+      "title": "The Economics of Blockchain vs Traditional Verification",
+      "slug": "the-economics-of-blockchain-vs-traditional-verification",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "economics",
+        "blockchain",
+        "traditional"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 385,
+      "title": "How Blockchain Addresses the Trust Deficit in Indian Institutions",
+      "slug": "how-blockchain-addresses-the-trust-deficit-in-indian-institutions",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "addresses",
+        "trust"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 386,
+      "title": "Why Students Should Demand Blockchain-Verified Degrees",
+      "slug": "why-students-should-demand-blockchain-verified-degrees",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "students",
+        "should",
+        "demand"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 387,
+      "title": "The Environmental Case for Proof of Authority Blockchain",
+      "slug": "the-environmental-case-for-proof-of-authority-blockchain",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "environmental",
+        "proof",
+        "authority"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 388,
+      "title": "How Blockchain Can Transform Land Record Management in India",
+      "slug": "how-blockchain-can-transform-land-record-management-in-india",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "transform",
+        "record"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 389,
+      "title": "Why Municipal Corporations Need Blockchain for Birth Death Certificates",
+      "slug": "why-municipal-corporations-need-blockchain-for-birth-death-certificates",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "municipal",
+        "corporations",
+        "blockchain"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 390,
+      "title": "The Future of Cross-Border Credential Recognition with Blockchain",
+      "slug": "the-future-of-cross-border-credential-recognition-with-blockchain",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "future",
+        "cross-border",
+        "credential"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 391,
+      "title": "How Blockchain Can Support India 2047 Vision",
+      "slug": "how-blockchain-can-support-india-2047-vision",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "support",
+        "india"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 392,
+      "title": "Why Blockchain Should Be Part of Every CIO Toolkit",
+      "slug": "why-blockchain-should-be-part-of-every-cio-toolkit",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "should",
+        "every"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 393,
+      "title": "The Rise of Verifiable Credentials in India",
+      "slug": "the-rise-of-verifiable-credentials-in-india",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "verifiable",
+        "credentials",
+        "india"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 394,
+      "title": "How Blockchain Can Help India Achieve SDG Goals",
+      "slug": "how-blockchain-can-help-india-achieve-sdg-goals",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "blockchain",
+        "india",
+        "achieve"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 395,
+      "title": "Why Traditional PKI Is Not Enough for Document Verification",
+      "slug": "why-traditional-pki-is-not-enough-for-document-verification",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "traditional",
+        "enough",
+        "document"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 396,
+      "title": "The Cost of Doing Nothing About Document Fraud",
+      "slug": "the-cost-of-doing-nothing-about-document-fraud",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "doing",
+        "nothing",
+        "about"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 397,
+      "title": "How India Can Become the World Leader in Document Blockchain",
+      "slug": "how-india-can-become-the-world-leader-in-document-blockchain",
+      "category": "Industry",
+      "seo_type": "GEO",
+      "pillar": "pillar-5",
+      "target_keywords": [
+        "india",
+        "become",
+        "world"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 398,
+      "title": "Setara vs Certichain: Indian Blockchain Platforms Compared",
+      "slug": "setara-vs-certichain-indian-blockchain-platforms-compared",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "setara",
+        "certichain:",
+        "indian"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 399,
+      "title": "Setara vs Blockcerts: Certificate Blockchain Solutions",
+      "slug": "setara-vs-blockcerts-certificate-blockchain-solutions",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "setara",
+        "blockcerts:",
+        "certificate"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 400,
+      "title": "Blockchain vs QR Codes: Which Is Better for Verification",
+      "slug": "blockchain-vs-qr-codes-which-is-better-for-verification",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain",
+        "codes:",
+        "which"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 401,
+      "title": "Setara vs AWS Managed Blockchain for Documents",
+      "slug": "setara-vs-aws-managed-blockchain-for-documents",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "setara",
+        "managed",
+        "blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 402,
+      "title": "Setara vs Azure Blockchain Service",
+      "slug": "setara-vs-azure-blockchain-service",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "setara",
+        "azure",
+        "blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 403,
+      "title": "Blockchain vs Digital Locker: Data Ownership Compared",
+      "slug": "blockchain-vs-digital-locker-data-ownership-compared",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain",
+        "digital",
+        "locker:"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 404,
+      "title": "Setara vs Hedera Hashgraph for Document Verification",
+      "slug": "setara-vs-hedera-hashgraph-for-document-verification",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "setara",
+        "hedera",
+        "hashgraph"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 405,
+      "title": "Cosmos SDK vs Substrate for Building Document Chains",
+      "slug": "cosmos-sdk-vs-substrate-for-building-document-chains",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "cosmos",
+        "substrate",
+        "building"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 406,
+      "title": "Proof of Authority vs Proof of Stake for Enterprise",
+      "slug": "proof-of-authority-vs-proof-of-stake-for-enterprise",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "proof",
+        "authority",
+        "proof"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 407,
+      "title": "On-Premise vs Cloud Blockchain for Government",
+      "slug": "on-premise-vs-cloud-blockchain-for-government",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "on-premise",
+        "cloud",
+        "blockchain"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 408,
+      "title": "Setara vs Aptos for Document Use Cases",
+      "slug": "setara-vs-aptos-for-document-use-cases",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "setara",
+        "aptos",
+        "document"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 409,
+      "title": "Private Blockchain vs Consortium Blockchain for Documents",
+      "slug": "private-blockchain-vs-consortium-blockchain-for-documents",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "private",
+        "blockchain",
+        "consortium"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 410,
+      "title": "IPFS vs Arweave for Permanent Document Storage",
+      "slug": "ipfs-vs-arweave-for-permanent-document-storage",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "arweave",
+        "permanent",
+        "document"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 411,
+      "title": "Setara vs Solana for Enterprise Document Management",
+      "slug": "setara-vs-solana-for-enterprise-document-management",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "setara",
+        "solana",
+        "enterprise"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 412,
+      "title": "Blockchain Verification vs Manual Verification Cost Comparison",
+      "slug": "blockchain-verification-vs-manual-verification-cost-comparison",
+      "category": "Comparisons",
+      "seo_type": "pSEO",
+      "pillar": "pillar-3",
+      "target_keywords": [
+        "blockchain",
+        "verification",
+        "manual"
+      ],
+      "estimated_read_time": 7
+    },
+    {
+      "id": 413,
+      "title": "What is a Genesis Block?",
+      "slug": "what-is-a-genesis-block",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a genesis block"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 414,
+      "title": "What is a Peer-to-Peer Network?",
+      "slug": "what-is-a-peer-to-peer-network",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a peer-to-peer network"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 415,
+      "title": "What is a Smart Contract?",
+      "slug": "what-is-a-smart-contract",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a smart contract"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 416,
+      "title": "What is an API Key?",
+      "slug": "what-is-an-api-key",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "an api key"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 417,
+      "title": "What is a REST API?",
+      "slug": "what-is-a-rest-api",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a rest api"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 418,
+      "title": "What is Docker Compose?",
+      "slug": "what-is-docker-compose",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "docker compose"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 419,
+      "title": "What is a Seed Node?",
+      "slug": "what-is-a-seed-node",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a seed node"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 420,
+      "title": "What is an RPC Endpoint?",
+      "slug": "what-is-an-rpc-endpoint",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "an rpc endpoint"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 421,
+      "title": "What is gRPC?",
+      "slug": "what-is-grpc",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "grpc"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 422,
+      "title": "What is a Block Explorer?",
+      "slug": "what-is-a-block-explorer",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a block explorer"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 423,
+      "title": "What is a Denomination in Blockchain?",
+      "slug": "what-is-a-denomination-in-blockchain",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a denomination in blockchain"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 424,
+      "title": "What is an AppChain?",
+      "slug": "what-is-an-appchain",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "an appchain"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 425,
+      "title": "What is a Sovereign Chain?",
+      "slug": "what-is-a-sovereign-chain",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a sovereign chain"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 426,
+      "title": "What is EVM Compatibility?",
+      "slug": "what-is-evm-compatibility",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "evm compatibility"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 427,
+      "title": "What is Blockchain Interoperability?",
+      "slug": "what-is-blockchain-interoperability",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain interoperability"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 428,
+      "title": "What is Cross-Chain Communication?",
+      "slug": "what-is-cross-chain-communication",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "cross-chain communication"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 429,
+      "title": "What is a Digital Signature?",
+      "slug": "what-is-a-digital-signature",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a digital signature"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 430,
+      "title": "What is Tamper-Proof Storage?",
+      "slug": "what-is-tamper-proof-storage",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "tamper-proof storage"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 431,
+      "title": "What is the DPDP Act 2023?",
+      "slug": "what-is-the-dpdp-act-2023",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "the dpdp act 2023"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 432,
+      "title": "What is CERT-In?",
+      "slug": "what-is-cert-in",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "cert-in"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 433,
+      "title": "What is Document Notarization on Blockchain?",
+      "slug": "what-is-document-notarization-on-blockchain",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "document notarization on blockchain"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 434,
+      "title": "What is a Fiat Credit System?",
+      "slug": "what-is-a-fiat-credit-system",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a fiat credit system"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 435,
+      "title": "What is Blockchain Finality?",
+      "slug": "what-is-blockchain-finality",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain finality"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 436,
+      "title": "What is a Permissioned Blockchain?",
+      "slug": "what-is-a-permissioned-blockchain",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a permissioned blockchain"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 437,
+      "title": "What is a Public Blockchain?",
+      "slug": "what-is-a-public-blockchain",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a public blockchain"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 438,
+      "title": "What is a Transaction Fee?",
+      "slug": "what-is-a-transaction-fee",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a transaction fee"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 439,
+      "title": "What is Blockchain Scalability?",
+      "slug": "what-is-blockchain-scalability",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain scalability"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 440,
+      "title": "What is a Merkle Tree?",
+      "slug": "what-is-a-merkle-tree",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a merkle tree"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 441,
+      "title": "What is Blockchain Governance?",
+      "slug": "what-is-blockchain-governance",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain governance"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 442,
+      "title": "What is a Node Operator?",
+      "slug": "what-is-a-node-operator",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a node operator"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 443,
+      "title": "What is a Light Client?",
+      "slug": "what-is-a-light-client",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a light client"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 444,
+      "title": "What is State Machine Replication?",
+      "slug": "what-is-state-machine-replication",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "state machine replication"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 445,
+      "title": "What is Blockchain Throughput?",
+      "slug": "what-is-blockchain-throughput",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain throughput"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 446,
+      "title": "What is Latency in Blockchain?",
+      "slug": "what-is-latency-in-blockchain",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "latency in blockchain"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 447,
+      "title": "What is a Blockchain Fork?",
+      "slug": "what-is-a-blockchain-fork",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a blockchain fork"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 448,
+      "title": "What is Chain Upgrade?",
+      "slug": "what-is-chain-upgrade",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "chain upgrade"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 449,
+      "title": "What is Cosmovisor?",
+      "slug": "what-is-cosmovisor",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "cosmovisor"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 450,
+      "title": "What is a Blockchain Wallet?",
+      "slug": "what-is-a-blockchain-wallet",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "a blockchain wallet"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 451,
+      "title": "What is Document Provenance?",
+      "slug": "what-is-document-provenance",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "document provenance"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 452,
+      "title": "What is Blockchain Auditability?",
+      "slug": "what-is-blockchain-auditability",
+      "category": "Glossary",
+      "seo_type": "glossary",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain auditability"
+      ],
+      "estimated_read_time": 5
+    },
+    {
+      "id": 453,
+      "title": "How CometBFT Achieves Sub-Second Block Finality",
+      "slug": "how-cometbft-achieves-sub-second-block-finality",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "cometbft",
+        "achieves",
+        "sub-second"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 454,
+      "title": "Understanding Blockchain State Machines for Beginners",
+      "slug": "understanding-blockchain-state-machines-for-beginners",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "understanding",
+        "blockchain",
+        "state"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 455,
+      "title": "How ABCI Connects Application Logic to Consensus",
+      "slug": "how-abci-connects-application-logic-to-consensus",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "connects",
+        "application",
+        "logic"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 456,
+      "title": "Building Custom Blockchain Modules with Cosmos SDK",
+      "slug": "building-custom-blockchain-modules-with-cosmos-sdk",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "building",
+        "custom",
+        "blockchain"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 457,
+      "title": "How IBC Enables Cross-Chain Document Sharing",
+      "slug": "how-ibc-enables-cross-chain-document-sharing",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "enables",
+        "cross-chain",
+        "document"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 458,
+      "title": "Understanding Blockchain Gas Mechanics and Why Setara Skips Them",
+      "slug": "understanding-blockchain-gas-mechanics-and-why-setara-skips-them",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "understanding",
+        "blockchain",
+        "mechanics"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 459,
+      "title": "The Technical Architecture of IPFS Pinning Services",
+      "slug": "the-technical-architecture-of-ipfs-pinning-services",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "technical",
+        "architecture",
+        "pinning"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 460,
+      "title": "How Content Addressing Prevents Document Tampering",
+      "slug": "how-content-addressing-prevents-document-tampering",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "content",
+        "addressing",
+        "prevents"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 461,
+      "title": "Understanding Blockchain Mempool and Transaction Ordering",
+      "slug": "understanding-blockchain-mempool-and-transaction-ordering",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "understanding",
+        "blockchain",
+        "mempool"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 462,
+      "title": "How Proof of Authority Prevents 51 Percent Attacks",
+      "slug": "how-proof-of-authority-prevents-51-percent-attacks",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "proof",
+        "authority",
+        "prevents"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 463,
+      "title": "The Role of Cryptography in Document Verification",
+      "slug": "the-role-of-cryptography-in-document-verification",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "cryptography",
+        "document",
+        "verification"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 464,
+      "title": "How Deterministic Builds Ensure Blockchain Reproducibility",
+      "slug": "how-deterministic-builds-ensure-blockchain-reproducibility",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "deterministic",
+        "builds",
+        "ensure"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 465,
+      "title": "Understanding Blockchain Event Logs for Document Tracking",
+      "slug": "understanding-blockchain-event-logs-for-document-tracking",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "understanding",
+        "blockchain",
+        "event"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 466,
+      "title": "How Blockchain Handles Network Partitions and Splits",
+      "slug": "how-blockchain-handles-network-partitions-and-splits",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "blockchain",
+        "handles",
+        "network"
+      ],
+      "estimated_read_time": 8
+    },
+    {
+      "id": 467,
+      "title": "The Science Behind Hash Collision Resistance",
+      "slug": "the-science-behind-hash-collision-resistance",
+      "category": "Technology",
+      "seo_type": "cluster",
+      "pillar": "pillar-1",
+      "target_keywords": [
+        "science",
+        "behind",
+        "collision"
+      ],
+      "estimated_read_time": 8
+    }
+  ]
+}
