@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-dark: #cccccc;
+  --gray-bg: #0a0a0a;
+  --focus-ring: #ffffff;
+  --font-scale: 1;
+}
+
+/* High contrast mode for accessibility */
+.high-contrast {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-dark: #cccccc;
+  --gray-bg: #111111;
+  --focus-ring: #ffff00;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-gray-bg: var(--gray-bg);
+  --font-sans: var(--font-mulish), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(100% * var(--font-scale));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(100, 150, 255, 0.04) 0%, transparent 50%);
+}
+
+/* Cosmos-style glass panels */
+.cosmos-glass {
+  background: rgba(25, 25, 25, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cosmos-glass-hover {
+  background: rgba(40, 40, 40, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Skip to content link - visible only on focus */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #1a1a2e;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0;
+}
+
+.skip-to-content:focus {
+  left: 0;
+  outline: 3px solid #E8613C;
+  outline-offset: 2px;
+}
+
+/* High contrast overrides */
+.high-contrast a {
+  color: #ffff00;
+  text-decoration: underline;
+}
+
+.high-contrast a:hover {
+  color: #ffffff;
+}
+
+.high-contrast .bg-white,
+.high-contrast [class*="bg-white"] {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .bg-\[\\#f8f9fa\],
+.high-contrast [class*="bg-[#f8f9fa]"] {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .text-gray-600,
+.high-contrast .text-gray-500,
+.high-contrast .text-gray-400 {
+  color: #e0e0e0 !important;
+}
+
+.high-contrast .border-gray-100,
+.high-contrast .border-gray-200,
+.high-contrast .border-gray-300 {
+  border-color: #666666 !important;
+}
+
+.high-contrast img {
+  filter: contrast(1.2);
+}
+
+/* Print styles - GIGW requirement */
+@media print {
+  nav,
+  footer,
+  .accessibility-bar,
+  .skip-to-content,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666666;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after {
+    content: "";
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  .mx-auto {
+    max-width: 100% !important;
+  }
+}
+
+/* Font size classes for accessibility toolbar */
+.font-size-small {
+  --font-scale: 0.875;
+}
+
+.font-size-normal {
+  --font-scale: 1;
+}
+
+.font-size-large {
+  --font-scale: 1.125;
+}
+
+.font-size-largest {
+  --font-scale: 1.25;
+}

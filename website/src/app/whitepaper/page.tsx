@@ -2,8 +2,24 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Whitepaper — Setara Network",
-  description: "Setara Network whitepaper: India's sovereign document blockchain.",
+  title: "Technical Whitepaper — Setara Network | Proof-of-Authority Document Blockchain",
+  description:
+    "Technical whitepaper explaining how Setara uses Proof-of-Authority consensus and Cosmos SDK to provide zero-gas-fee blockchain document verification for Indian organizations. Architecture, billing model, security, and roadmap.",
+  keywords: [
+    "Setara whitepaper",
+    "blockchain whitepaper India",
+    "Proof of Authority blockchain",
+    "Cosmos SDK document verification",
+    "document blockchain architecture",
+  ],
+  alternates: { canonical: "/whitepaper" },
+  openGraph: {
+    title: "Technical Whitepaper — Setara Network",
+    description:
+      "How Setara uses PoA consensus and Cosmos SDK for zero-gas-fee document verification. Architecture, billing, security.",
+    url: "/whitepaper",
+    type: "article",
+  },
 };
 
 function SideLink({ id, label, sub }: { id: string; label: string; sub?: boolean }) {
