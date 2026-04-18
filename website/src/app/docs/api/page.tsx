@@ -55,13 +55,14 @@ export default function ApiDocsPage() {
           <li><strong>Org endpoints</strong>: Include <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">X-API-Key: sk_your_key</code> header</li>
           <li><strong>Admin endpoints</strong>: Include <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">X-Admin-Secret: your_secret</code> header</li>
         </ul>
+        <p className="mt-4 text-gray-700 text-sm">All errors are returned as JSON: <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">{`{"error":"description"}`}</code>. Org and Admin endpoints return <code>401</code> when the API key is missing or invalid.</p>
 
         {/* Public Endpoints */}
         <h2 className="text-2xl font-bold text-[#1a1a2e] mt-12">Public Endpoints</h2>
 
         <h3 className="text-xl font-semibold text-[#1a1a2e] mt-8">Register Organization</h3>
         <Endpoint method="POST" path="/api/v1/register" />
-        <p className="text-gray-700">Register a new organization and receive credentials.</p>
+        <p className="text-gray-700">Register a new organization and receive credentials. Each call creates a new organization (the same email can register multiple organizations). All fields are required.</p>
         <p className="text-sm font-semibold text-gray-500 mt-4">Request:</p>
         <Code label="json">{`{
   "name": "My Organization",
@@ -72,13 +73,13 @@ export default function ApiDocsPage() {
 }`}</Code>
         <p className="text-sm font-semibold text-gray-500 mt-4">Response (201):</p>
         <Code label="json">{`{
-  "org_id": "abc123def456...",
-  "api_key": "sk_...",
+  "org_id": "922991d01b50c237d698400d397bf580",
+  "api_key": "sk_f82c04ff829ee920aaa5507ab07143f3...",
   "credits": 5000,
-  "message": "Registration successful.",
+  "message": "Registration successful. Save your org_id and api_key — you will need them to interact with Setara Network.",
   "note": "You have been credited 5,000 free credits to build and test."
 }`}</Code>
-        <p className="text-gray-600 text-sm mt-2">Errors: <code>400</code> Missing required fields | <code>409</code> Email already registered</p>
+        <p className="text-gray-600 text-sm mt-2">Errors: <code>400</code> <code>name, first_name, last_name, email, and phone are required</code></p>
 
         <h3 className="text-xl font-semibold text-[#1a1a2e] mt-8">Verify Document</h3>
         <Endpoint method="GET" path="/api/v1/verify?hash={document_hash}" />
@@ -97,7 +98,7 @@ export default function ApiDocsPage() {
     "issued_at": "1772867826"
   }
 }`}</Code>
-        <p className="text-gray-600 text-sm mt-2">Errors: <code>400</code> Missing hash parameter | <code>404</code> Document not found</p>
+        <p className="text-gray-600 text-sm mt-2">Errors: <code>400</code> <code>hash query parameter is required</code> | <code>404</code> <code>document not found</code></p>
 
         {/* Org Endpoints */}
         <h2 className="text-2xl font-bold text-[#1a1a2e] mt-12">Org Endpoints</h2>
@@ -106,30 +107,30 @@ export default function ApiDocsPage() {
         <h3 className="text-xl font-semibold text-[#1a1a2e] mt-8">Get Wallet Balance</h3>
         <Endpoint method="GET" path="/api/v1/me/wallet" />
         <Code label="json">{`{
-  "org_id": "abc123...",
-  "credits": 4999,
-  "credit_rate": 1.0,
-  "last_topup_at": "2026-03-07T12:00:00Z"
+  "org_id": "922991d01b50c237d698400d397bf580",
+  "credits": 5000,
+  "credit_rate": 1,
+  "last_topup_at": "2026-04-03T09:41:43.195925377Z"
 }`}</Code>
 
         <h3 className="text-xl font-semibold text-[#1a1a2e] mt-8">Get Transaction History</h3>
         <Endpoint method="GET" path="/api/v1/me/transactions" />
         <Code label="json">{`[
   {
-    "id": "tx123...",
-    "org_id": "abc123...",
+    "id": "9b72ac773952a069e5f2aee58c545f82",
+    "org_id": "922991d01b50c237d698400d397bf580",
     "type": "signup_bonus",
     "credits": 5000,
     "reference": "Welcome bonus - 5000 free credits",
-    "created_at": "2026-03-07T12:00:00Z"
+    "created_at": "2026-04-03T09:41:43Z"
   },
   {
-    "id": "tx456...",
-    "org_id": "abc123...",
+    "id": "a1b2c3d4e5f6...",
+    "org_id": "922991d01b50c237d698400d397bf580",
     "type": "document_fee",
     "credits": -1,
-    "reference": "sha256:doc_hash",
-    "created_at": "2026-03-07T12:05:00Z"
+    "reference": "sha256:e3b0c44298fc1c149afbf4c8996fb924...",
+    "created_at": "2026-04-03T10:05:00Z"
   }
 ]`}</Code>
 
@@ -137,20 +138,58 @@ export default function ApiDocsPage() {
         <Endpoint method="POST" path="/api/v1/me/documents" />
         <p className="text-sm font-semibold text-gray-500 mt-2">Request:</p>
         <Code label="json">{`{
-  "hash": "sha256:your_document_hash",
+  "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "ipfs_cid": "QmYourCID",
   "doc_type": "certificate",
   "metadata": "{\\"key\\":\\"value\\"}",
   "recipient": "recipient_identifier"
 }`}</Code>
+        <div className="mt-3 overflow-x-auto">
+          <table className="w-full text-sm text-left text-gray-700 border border-gray-200 rounded-lg">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-2 font-semibold">Field</th>
+                <th className="px-4 py-2 font-semibold">Required</th>
+                <th className="px-4 py-2 font-semibold">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t border-gray-200">
+                <td className="px-4 py-2"><code>hash</code></td>
+                <td className="px-4 py-2">Yes</td>
+                <td className="px-4 py-2">SHA-256 hash. Format: <code>sha256:&lt;64 hex chars&gt;</code> or plain <code>64 hex chars</code>.</td>
+              </tr>
+              <tr className="border-t border-gray-200">
+                <td className="px-4 py-2"><code>ipfs_cid</code></td>
+                <td className="px-4 py-2">Yes</td>
+                <td className="px-4 py-2">IPFS content identifier (CID) of the uploaded document.</td>
+              </tr>
+              <tr className="border-t border-gray-200">
+                <td className="px-4 py-2"><code>doc_type</code></td>
+                <td className="px-4 py-2">Yes</td>
+                <td className="px-4 py-2">Document type (e.g., <code>certificate</code>, <code>degree</code>, <code>license</code>).</td>
+              </tr>
+              <tr className="border-t border-gray-200">
+                <td className="px-4 py-2"><code>metadata</code></td>
+                <td className="px-4 py-2">No</td>
+                <td className="px-4 py-2">JSON string with additional document metadata.</td>
+              </tr>
+              <tr className="border-t border-gray-200">
+                <td className="px-4 py-2"><code>recipient</code></td>
+                <td className="px-4 py-2">No</td>
+                <td className="px-4 py-2">Identifier for the document recipient (email, ID, etc.).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p className="text-sm font-semibold text-gray-500 mt-4">Response (201):</p>
         <Code label="json">{`{
   "status": "submitted",
-  "hash": "sha256:your_document_hash",
+  "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "credits_deducted": 1,
   "credits_remaining": 4999
 }`}</Code>
-        <p className="text-gray-600 text-sm mt-2">Errors: <code>400</code> Missing fields | <code>402</code> Insufficient credits | <code>500</code> Chain transaction failed</p>
+        <p className="text-gray-600 text-sm mt-2">Errors: <code>400</code> <code>hash, ipfs_cid, and doc_type are required</code> | <code>400</code> <code>invalid hash format</code> | <code>402</code> Insufficient credits | <code>500</code> Chain transaction failed</p>
 
         {/* Admin Endpoints */}
         <h2 className="text-2xl font-bold text-[#1a1a2e] mt-12">Admin Endpoints</h2>

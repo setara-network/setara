@@ -1,4 +1,6 @@
 release/
+build/
+website/scripts/publish-state.json
 .idea/
 .vscode/
 .DS_Store

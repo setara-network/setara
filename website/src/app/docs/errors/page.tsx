@@ -52,8 +52,8 @@ const errorCodes = [
   {
     status: 400,
     code: "invalid_hash",
-    description: 'Hash format is invalid (must be sha256:...)',
-    resolution: 'Prefix your SHA-256 hash with "sha256:"',
+    description: 'Hash format is invalid (expected sha256:<64 hex chars> or 64 hex chars)',
+    resolution: 'Use format "sha256:<64 hex chars>" or provide plain 64 hex characters',
   },
   {
     status: 400,
@@ -81,9 +81,9 @@ const errorCodes = [
   },
   {
     status: 409,
-    code: "already_registered",
-    description: "Email or document hash already exists",
-    resolution: "Check for duplicate registrations",
+    code: "duplicate_document",
+    description: "Document hash already registered on-chain",
+    resolution: "Verify the document hash — each hash can only be registered once",
   },
   {
     status: 429,
@@ -132,14 +132,12 @@ export default function ErrorCodesPage() {
             All error responses follow a consistent JSON shape regardless of the HTTP status code:
           </p>
           <Code label="json">{`{
-  "error": "error_code",
-  "message": "Human readable message"
+  "error": "human readable error description"
 }`}</Code>
           <p className="mt-2 text-gray-700">
-            Use the <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">error</code> field
-            for programmatic handling. Use the{" "}
-            <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">message</code> field for
-            display or logging.
+            The <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">error</code> field
+            contains a human-readable description of the problem. Use it for both programmatic handling
+            and display/logging.
           </p>
 
           {/* Error Code Table */}
